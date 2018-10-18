@@ -1,0 +1,486 @@
+2018-10-18 05:42:25  /entrypoint.sh: static: does not generate config
+HEALTH_WARN clock skew detected on mon.ceph-node2, mon.ceph-node3; Monitor clock skew detected 
+2018-10-18 05:42:26  /entrypoint.sh: SUCCESS
+exec: PID 217: spawning /usr/bin/radosgw --cluster ceph --setuser ceph --setgroup ceph -d -n client.rgw.ceph-node1 -k /var/lib/ceph/radosgw/ceph-rgw.ceph-node1/keyring
+exec: Waiting 217 to quit
+2018-10-18 05:42:26.301679 7f0328f97a00  0 deferred set uid:gid to 167:167 (ceph:ceph)
+2018-10-18 05:42:26.302180 7f0328f97a00  0 ceph version 10.2.3-426-gee91e06 (ee91e06d3f2176add959bd8b1b5bfb9fbdcda5a8), process radosgw, pid 217
+2018-10-18 05:42:26.587115 7f0328f97a00  0 starting handler: civetweb
+2018-10-18 05:42:26.592239 7f0307fff700  0 monclient: hunting for new mon
+2018-10-18 05:42:26.595717 7f03046f7700  0 -- 192.168.136.187:0/3144602028 submit_message osd_op(client.114189.0:87 3.3 users.uid/ [pgls start_epoch 0] snapc 0=[] ack+read+known_if_redirected e145) v7 remote, 192.168.136.189:6800/8942, failed lossy con, dropping message 0x7f02d8005a70
+2018-10-18 05:42:26.650382 7f0328f97a00  0 WARNING: skipping unknown framework: fastcgi
+2018-10-18 05:42:26.681805 7f02f2ffd700  0 RGWGC::process() failed to acquire lock on gc.22
+2018-10-18 05:43:14.201865 7f0268ff1700  1 ====== starting new request req=0x7f0268feb5b0 =====
+2018-10-18 05:43:14.209859 7f0268ff1700  1 ====== req done req=0x7f0268feb5b0 op status=0 http_status=204 ======
+2018-10-18 05:43:14.210025 7f0268ff1700  1 civetweb: 0x7f02e4002e80: 192.168.136.188 - - [18/Oct/2018:05:43:14 +0000] "GET /auth HTTP/1.1" 1 0 - python-requests/2.6.0 CPython/2.7.5 Linux/3.10.0-693.el7.x86_64
+2018-10-18 05:43:14.214202 7f026effd700  1 ====== starting new request req=0x7f026eff75b0 =====
+2018-10-18 05:43:17.984427 7f026effd700  0 NOTICE: request time skew too big now=2018-10-18 05:43:17.000000 req_time=2018-10-18 06:02:35.000000
+2018-10-18 05:43:17.984947 7f026effd700  1 ====== req done req=0x7f026eff75b0 op status=0 http_status=403 ======
+2018-10-18 05:43:17.985030 7f026effd700  1 civetweb: 0x7f02dc002e80: 192.168.136.188 - - [18/Oct/2018:05:43:14 +0000] "PUT /eisoo/ HTTP/1.1" 1 0 - Boto/2.49.0 Python/2.7.5 Linux/3.10.0-693.el7.x86_64
+2018-10-18 05:43:30.350431 7f026c7f8700  1 ====== starting new request req=0x7f026c7f25b0 =====
+2018-10-18 05:43:30.356245 7f026c7f8700  1 ====== req done req=0x7f026c7f25b0 op status=0 http_status=204 ======
+2018-10-18 05:43:30.356340 7f026c7f8700  1 civetweb: 0x7f02fc001f50: 192.168.136.188 - - [18/Oct/2018:05:43:30 +0000] "GET /auth HTTP/1.1" 1 0 - python-requests/2.6.0 CPython/2.7.5 Linux/3.10.0-693.el7.x86_64
+2018-10-18 05:43:30.362419 7f02687f0700  1 ====== starting new request req=0x7f02687ea5b0 =====
+2018-10-18 05:43:30.362742 7f02687f0700  0 NOTICE: request time skew too big now=2018-10-18 05:43:30.000000 req_time=2018-10-18 06:02:51.000000
+2018-10-18 05:43:30.362943 7f02687f0700  1 ====== req done req=0x7f02687ea5b0 op status=0 http_status=403 ======
+2018-10-18 05:43:30.362999 7f02687f0700  1 civetweb: 0x7f02f4001460: 192.168.136.188 - - [18/Oct/2018:05:43:30 +0000] "PUT /eisoo/ HTTP/1.1" 1 0 - Boto/2.49.0 Python/2.7.5 Linux/3.10.0-693.el7.x86_64
+2018-10-18 05:43:36.383703 7f026e7fc700  1 ====== starting new request req=0x7f026e7f65b0 =====
+2018-10-18 05:43:36.384219 7f026e7fc700  1 ====== req done req=0x7f026e7f65b0 op status=0 http_status=204 ======
+2018-10-18 05:43:36.384321 7f026e7fc700  1 civetweb: 0x7f02dc007400: 192.168.136.188 - - [18/Oct/2018:05:43:36 +0000] "GET /auth HTTP/1.1" 1 0 - python-requests/2.6.0 CPython/2.7.5 Linux/3.10.0-693.el7.x86_64
+2018-10-18 05:43:36.388183 7f026d7fa700  1 ====== starting new request req=0x7f026d7f45b0 =====
+2018-10-18 05:43:36.388439 7f026d7fa700  0 NOTICE: request time skew too big now=2018-10-18 05:43:36.000000 req_time=2018-10-18 06:02:57.000000
+2018-10-18 05:43:36.388592 7f026d7fa700  1 ====== req done req=0x7f026d7f45b0 op status=0 http_status=403 ======
+2018-10-18 05:43:36.388658 7f026d7fa700  1 civetweb: 0x7f02e800c340: 192.168.136.188 - - [18/Oct/2018:05:43:36 +0000] "PUT /eisoo/ HTTP/1.1" 1 0 - Boto/2.49.0 Python/2.7.5 Linux/3.10.0-693.el7.x86_64
+2018-10-18 05:52:51.436369 7f026a7f4700  1 ====== starting new request req=0x7f026a7ee5b0 =====
+2018-10-18 05:52:51.436947 7f026a7f4700  1 ====== req done req=0x7f026a7ee5b0 op status=0 http_status=204 ======
+2018-10-18 05:52:51.437024 7f026a7f4700  1 civetweb: 0x7f03000009b0: 192.168.136.188 - - [18/Oct/2018:05:52:51 +0000] "GET /auth HTTP/1.1" 1 0 - python-requests/2.6.0 CPython/2.7.5 Linux/3.10.0-693.el7.x86_64
+2018-10-18 05:52:51.442712 7f02677ee700  1 ====== starting new request req=0x7f02677e85b0 =====
+2018-10-18 05:52:51.443214 7f02677ee700  0 NOTICE: request time skew too big now=2018-10-18 05:52:51.000000 req_time=2018-10-18 06:12:12.000000
+2018-10-18 05:52:51.443390 7f02677ee700  1 ====== req done req=0x7f02677e85b0 op status=0 http_status=403 ======
+2018-10-18 05:52:51.443479 7f02677ee700  1 civetweb: 0x7f02e0004e40: 192.168.136.188 - - [18/Oct/2018:05:52:51 +0000] "PUT /eisoo/ HTTP/1.1" 1 0 - Boto/2.49.0 Python/2.7.5 Linux/3.10.0-693.el7.x86_64
+2018-10-18 05:53:06.051335 7f0267fef700  1 ====== starting new request req=0x7f0267fe95b0 =====
+2018-10-18 05:53:06.051941 7f0267fef700  1 ====== req done req=0x7f0267fe95b0 op status=0 http_status=204 ======
+2018-10-18 05:53:06.052025 7f0267fef700  1 civetweb: 0x7f02e4007400: 192.168.136.188 - - [18/Oct/2018:05:53:06 +0000] "GET /auth HTTP/1.1" 1 0 - python-requests/2.6.0 CPython/2.7.5 Linux/3.10.0-693.el7.x86_64
+2018-10-18 05:53:06.055641 7f026b7f6700  1 ====== starting new request req=0x7f026b7f05b0 =====
+2018-10-18 05:53:06.056005 7f026b7f6700  0 NOTICE: request time skew too big now=2018-10-18 05:53:06.000000 req_time=2018-10-18 06:12:26.000000
+2018-10-18 05:53:06.056172 7f026b7f6700  1 ====== req done req=0x7f026b7f05b0 op status=0 http_status=403 ======
+2018-10-18 05:53:06.056258 7f026b7f6700  1 civetweb: 0x7f02f40059e0: 192.168.136.188 - - [18/Oct/2018:05:53:06 +0000] "HEAD /eisoo/ HTTP/1.1" 1 0 - Boto/2.49.0 Python/2.7.5 Linux/3.10.0-693.el7.x86_64
+2018-10-18 05:53:59.092071 7f026bff7700  1 ====== starting new request req=0x7f026bff15b0 =====
+2018-10-18 05:53:59.092605 7f026bff7700  1 ====== req done req=0x7f026bff15b0 op status=0 http_status=204 ======
+2018-10-18 05:53:59.092865 7f026bff7700  1 civetweb: 0x7f02f8018850: 192.168.136.188 - - [18/Oct/2018:05:53:59 +0000] "GET /auth HTTP/1.1" 1 0 - python-requests/2.6.0 CPython/2.7.5 Linux/3.10.0-693.el7.x86_64
+2018-10-18 05:53:59.100448 7f0269ff3700  1 ====== starting new request req=0x7f0269fed5b0 =====
+2018-10-18 05:53:59.100693 7f0269ff3700  0 NOTICE: request time skew too big now=2018-10-18 05:53:59.000000 req_time=2018-10-18 06:13:20.000000
+2018-10-18 05:53:59.100832 7f0269ff3700  1 ====== req done req=0x7f0269fed5b0 op status=0 http_status=403 ======
+2018-10-18 05:53:59.100945 7f0269ff3700  1 civetweb: 0x557e1c7ad3b0: 192.168.136.188 - - [18/Oct/2018:05:53:59 +0000] "HEAD /eisoo/ HTTP/1.1" 1 0 - Boto/2.49.0 Python/2.7.5 Linux/3.10.0-693.el7.x86_64
+2018-10-18 05:54:07.864209 7f026aff5700  1 ====== starting new request req=0x7f026afef5b0 =====
+2018-10-18 05:54:07.864827 7f026aff5700  1 ====== req done req=0x7f026afef5b0 op status=0 http_status=204 ======
+2018-10-18 05:54:07.864949 7f026aff5700  1 civetweb: 0x7f02fc0064d0: 192.168.136.188 - - [18/Oct/2018:05:54:07 +0000] "GET /auth HTTP/1.1" 1 0 - python-requests/2.6.0 CPython/2.7.5 Linux/3.10.0-693.el7.x86_64
+2018-10-18 05:54:07.892634 7f0266fed700  1 ====== starting new request req=0x7f0266fe75b0 =====
+2018-10-18 05:54:07.892982 7f0266fed700  0 NOTICE: request time skew too big now=2018-10-18 05:54:07.000000 req_time=2018-10-18 06:13:28.000000
+2018-10-18 05:54:07.896141 7f0266fed700  1 ====== req done req=0x7f0266fe75b0 op status=0 http_status=403 ======
+2018-10-18 05:54:07.896247 7f0266fed700  1 civetweb: 0x7f02ec0009b0: 192.168.136.188 - - [18/Oct/2018:05:54:07 +0000] "HEAD /eisoo/ HTTP/1.1" 1 0 - Boto/2.49.0 Python/2.7.5 Linux/3.10.0-693.el7.x86_64
+2018-10-18 05:54:09.538351 7f026dffb700  1 ====== starting new request req=0x7f026dff55b0 =====
+2018-10-18 05:54:09.539030 7f026dffb700  1 ====== req done req=0x7f026dff55b0 op status=0 http_status=204 ======
+2018-10-18 05:54:09.539158 7f026dffb700  1 civetweb: 0x7f027c002890: 192.168.136.188 - - [18/Oct/2018:05:54:09 +0000] "GET /auth HTTP/1.1" 1 0 - python-requests/2.6.0 CPython/2.7.5 Linux/3.10.0-693.el7.x86_64
+2018-10-18 05:54:09.546053 7f02697f2700  1 ====== starting new request req=0x7f02697ec5b0 =====
+2018-10-18 05:54:09.546394 7f02697f2700  0 NOTICE: request time skew too big now=2018-10-18 05:54:09.000000 req_time=2018-10-18 06:13:30.000000
+2018-10-18 05:54:09.548231 7f02697f2700  1 ====== req done req=0x7f02697ec5b0 op status=0 http_status=403 ======
+2018-10-18 05:54:09.548332 7f02697f2700  1 civetweb: 0x7f0270000ea0: 192.168.136.188 - - [18/Oct/2018:05:54:09 +0000] "HEAD /eisoo/ HTTP/1.1" 1 0 - Boto/2.49.0 Python/2.7.5 Linux/3.10.0-693.el7.x86_64
+2018-10-18 05:56:28.505688 7f026cff9700  1 ====== starting new request req=0x7f026cff35b0 =====
+2018-10-18 05:56:28.506230 7f026cff9700  1 ====== req done req=0x7f026cff35b0 op status=0 http_status=204 ======
+2018-10-18 05:56:28.506311 7f026cff9700  1 civetweb: 0x7f0278000bd0: 192.168.136.188 - - [18/Oct/2018:05:56:28 +0000] "GET /auth HTTP/1.1" 1 0 - python-requests/2.6.0 CPython/2.7.5 Linux/3.10.0-693.el7.x86_64
+2018-10-18 05:56:28.509848 7f02667ec700  1 ====== starting new request req=0x7f02667e65b0 =====
+2018-10-18 05:56:28.510144 7f02667ec700  0 NOTICE: request time skew too big now=2018-10-18 05:56:28.000000 req_time=2018-10-18 06:15:49.000000
+2018-10-18 05:56:28.510306 7f02667ec700  1 ====== req done req=0x7f02667e65b0 op status=0 http_status=403 ======
+2018-10-18 05:56:28.510386 7f02667ec700  1 civetweb: 0x7f0288000ea0: 192.168.136.188 - - [18/Oct/2018:05:56:28 +0000] "HEAD /eisoo/ HTTP/1.1" 1 0 - Boto/2.49.0 Python/2.7.5 Linux/3.10.0-693.el7.x86_64
+2010-10-11 06:20:59.304719 7f0304ff9700 -1 RGWWatcher::handle_error cookie 94000131709456 err (107) Transport endpoint is not connected
+2010-10-11 06:20:59.304899 7f0304ff9700 -1 RGWWatcher::handle_error cookie 94000131738896 err (107) Transport endpoint is not connected
+2010-10-11 06:20:59.304937 7f0304ff9700 -1 RGWWatcher::handle_error cookie 94000131731744 err (107) Transport endpoint is not connected
+2010-10-11 06:20:59.304944 7f0304ff9700 -1 RGWWatcher::handle_error cookie 94000131734128 err (107) Transport endpoint is not connected
+2010-10-11 06:20:59.304949 7f0304ff9700 -1 RGWWatcher::handle_error cookie 94000131736512 err (107) Transport endpoint is not connected
+2010-10-11 06:20:59.315366 7f0304ff9700 -1 RGWWatcher::handle_error cookie 94000131741280 err (107) Transport endpoint is not connected
+2010-10-11 06:21:15.736637 7f02657ea700  1 ====== starting new request req=0x7f02657e45b0 =====
+2010-10-11 06:21:15.756535 7f02657ea700  1 ====== req done req=0x7f02657e45b0 op status=0 http_status=204 ======
+2010-10-11 06:21:15.756646 7f02657ea700  1 civetweb: 0x7f0290000ea0: 192.168.136.188 - - [11/Oct/2010:06:21:15 +0000] "GET /auth HTTP/1.1" 1 0 - python-requests/2.6.0 CPython/2.7.5 Linux/3.10.0-693.el7.x86_64
+2010-10-11 06:21:15.760660 7f02647e8700  1 ====== starting new request req=0x7f02647e25b0 =====
+2010-10-11 06:21:15.770154 7f02647e8700  0 NOTICE: request time skew too big now=2010-10-11 06:21:15.000000 req_time=2018-10-18 06:21:14.000000
+2010-10-11 06:21:15.770332 7f02647e8700  1 ====== req done req=0x7f02647e25b0 op status=0 http_status=403 ======
+2010-10-11 06:21:15.770416 7f02647e8700  1 civetweb: 0x7f02a4000ea0: 192.168.136.188 - - [11/Oct/2010:06:21:15 +0000] "HEAD /eisoo/ HTTP/1.1" 1 0 - Boto/2.49.0 Python/2.7.5 Linux/3.10.0-693.el7.x86_64
+2010-10-11 06:21:29.333895 7f0304ff9700 -1 RGWWatcher::handle_error cookie 139648982639552 err (107) Transport endpoint is not connected
+2010-10-11 06:21:29.352125 7f0304ff9700 -1 RGWWatcher::handle_error cookie 139648982641216 err (107) Transport endpoint is not connected
+2010-10-11 06:21:29.364805 7f0304ff9700 -1 RGWWatcher::handle_error cookie 139648982643888 err (107) Transport endpoint is not connected
+2010-10-11 06:21:29.374799 7f0304ff9700 -1 RGWWatcher::handle_error cookie 139648982646208 err (107) Transport endpoint is not connected
+2010-10-11 06:21:29.383861 7f0304ff9700 -1 RGWWatcher::handle_error cookie 139648982648352 err (107) Transport endpoint is not connected
+2010-10-11 06:21:29.384467 7f0304ff9700 -1 RGWWatcher::handle_error cookie 139648982650480 err (107) Transport endpoint is not connected
+2010-10-11 06:21:41.817009 7f0265feb700  1 ====== starting new request req=0x7f0265fe55b0 =====
+2010-10-11 06:21:41.826233 7f0265feb700  1 ====== req done req=0x7f0265fe55b0 op status=0 http_status=204 ======
+2010-10-11 06:21:41.826318 7f0265feb700  1 civetweb: 0x7f0294000ea0: 192.168.136.188 - - [11/Oct/2010:06:21:41 +0000] "GET /auth HTTP/1.1" 1 0 - python-requests/2.6.0 CPython/2.7.5 Linux/3.10.0-693.el7.x86_64
+2010-10-11 06:21:41.835431 7f0264fe9700  1 ====== starting new request req=0x7f0264fe35b0 =====
+2010-10-11 06:21:41.841339 7f0264fe9700  0 NOTICE: request time skew too big now=2010-10-11 06:21:41.000000 req_time=2018-10-18 06:21:40.000000
+2010-10-11 06:21:41.841555 7f0264fe9700  1 ====== req done req=0x7f0264fe35b0 op status=0 http_status=403 ======
+2010-10-11 06:21:41.841658 7f0264fe9700  1 civetweb: 0x7f0298000ea0: 192.168.136.188 - - [11/Oct/2010:06:21:41 +0000] "HEAD /eisoo/ HTTP/1.1" 1 0 - Boto/2.49.0 Python/2.7.5 Linux/3.10.0-693.el7.x86_64
+2010-10-11 06:21:59.358802 7f0304ff9700 -1 RGWWatcher::handle_error cookie 139648982639552 err (107) Transport endpoint is not connected
+2010-10-11 06:21:59.368205 7f0304ff9700 -1 RGWWatcher::handle_error cookie 139648982641216 err (107) Transport endpoint is not connected
+2010-10-11 06:21:59.376527 7f0304ff9700 -1 RGWWatcher::handle_error cookie 139648982643888 err (107) Transport endpoint is not connected
+2010-10-11 06:21:59.398745 7f0304ff9700 -1 RGWWatcher::handle_error cookie 139648982646208 err (107) Transport endpoint is not connected
+2010-10-11 06:21:59.412720 7f0304ff9700 -1 RGWWatcher::handle_error cookie 139648982648352 err (107) Transport endpoint is not connected
+2010-10-11 06:21:59.419354 7f0304ff9700 -1 RGWWatcher::handle_error cookie 139648982650480 err (107) Transport endpoint is not connected
+2010-10-11 06:22:29.373723 7f0304ff9700 -1 RGWWatcher::handle_error cookie 139648982639552 err (107) Transport endpoint is not connected
+2010-10-11 06:22:29.388344 7f0304ff9700 -1 RGWWatcher::handle_error cookie 139648982641216 err (107) Transport endpoint is not connected
+2010-10-11 06:22:29.389670 7f0304ff9700 -1 RGWWatcher::handle_error cookie 139648982643888 err (107) Transport endpoint is not connected
+2010-10-11 06:22:29.416894 7f0304ff9700 -1 RGWWatcher::handle_error cookie 139648982646208 err (107) Transport endpoint is not connected
+2010-10-11 06:22:29.424451 7f0304ff9700 -1 RGWWatcher::handle_error cookie 139648982648352 err (107) Transport endpoint is not connected
+2010-10-11 06:22:29.444860 7f0304ff9700 -1 RGWWatcher::handle_error cookie 139648982650480 err (107) Transport endpoint is not connected
+2018-10-18 06:22:34.000129 7f02c87f8700  1 heartbeat_map reset_timeout 'RGWAsyncRadosProcessor::m_tp thread 0x7f02c87f8700' had timed out after 60
+2018-10-18 06:22:34.000220 7f02beffd700  1 heartbeat_map reset_timeout 'RGWAsyncRadosProcessor::m_tp thread 0x7f02beffd700' had timed out after 60
+2018-10-18 06:22:34.000250 7f02c6ff5700  1 heartbeat_map reset_timeout 'RGWAsyncRadosProcessor::m_tp thread 0x7f02c6ff5700' had timed out after 60
+2018-10-18 06:22:34.000275 7f02c67f4700  1 heartbeat_map reset_timeout 'RGWAsyncRadosProcessor::m_tp thread 0x7f02c67f4700' had timed out after 60
+2018-10-18 06:22:34.000320 7f02bdffb700  1 heartbeat_map reset_timeout 'RGWAsyncRadosProcessor::m_tp thread 0x7f02bdffb700' had timed out after 60
+2018-10-18 06:22:34.000347 7f02f1ffb700  1 heartbeat_map reset_timeout 'RGWAsyncRadosProcessor::m_tp thread 0x7f02f1ffb700' had timed out after 60
+2018-10-18 06:22:34.000725 7f02bcff9700  1 heartbeat_map reset_timeout 'RGWAsyncRadosProcessor::m_tp thread 0x7f02bcff9700' had timed out after 60
+2018-10-18 06:22:34.000764 7f02d1ffb700  1 heartbeat_map reset_timeout 'RGWAsyncRadosProcessor::m_tp thread 0x7f02d1ffb700' had timed out after 60
+2018-10-18 06:22:34.000760 7f030dd98700  1 heartbeat_map is_healthy 'RGWAsyncRadosProcessor::m_tp thread 0x7f02bd7fa700' had timed out after 60
+2018-10-18 06:22:34.000769 7f030dd98700  1 heartbeat_map is_healthy 'RGWAsyncRadosProcessor::m_tp thread 0x7f02be7fc700' had timed out after 60
+2018-10-18 06:22:34.000772 7f030dd98700  1 heartbeat_map is_healthy 'RGWAsyncRadosProcessor::m_tp thread 0x7f02bf7fe700' had timed out after 60
+2018-10-18 06:22:34.000775 7f030dd98700  1 heartbeat_map is_healthy 'RGWAsyncRadosProcessor::m_tp thread 0x7f02c57f2700' had timed out after 60
+2018-10-18 06:22:34.000777 7f030dd98700  1 heartbeat_map is_healthy 'RGWAsyncRadosProcessor::m_tp thread 0x7f02bffff700' had timed out after 60
+2018-10-18 06:22:34.000779 7f030dd98700  1 heartbeat_map is_healthy 'RGWAsyncRadosProcessor::m_tp thread 0x7f02c4ff1700' had timed out after 60
+2018-10-18 06:22:34.000781 7f030dd98700  1 heartbeat_map is_healthy 'RGWAsyncRadosProcessor::m_tp thread 0x7f02c5ff3700' had timed out after 60
+2018-10-18 06:22:34.000785 7f030dd98700  1 heartbeat_map is_healthy 'RGWAsyncRadosProcessor::m_tp thread 0x7f02c77f6700' had timed out after 60
+2018-10-18 06:22:34.000787 7f030dd98700  1 heartbeat_map is_healthy 'RGWAsyncRadosProcessor::m_tp thread 0x7f02c7ff7700' had timed out after 60
+2018-10-18 06:22:34.000789 7f030dd98700  1 heartbeat_map is_healthy 'RGWAsyncRadosProcessor::m_tp thread 0x7f02c8ff9700' had timed out after 60
+2018-10-18 06:22:34.000791 7f030dd98700  1 heartbeat_map is_healthy 'RGWAsyncRadosProcessor::m_tp thread 0x7f02c97fa700' had timed out after 60
+2018-10-18 06:22:34.000793 7f030dd98700  1 heartbeat_map is_healthy 'RGWAsyncRadosProcessor::m_tp thread 0x7f02c9ffb700' had timed out after 60
+2018-10-18 06:22:34.000795 7f030dd98700  1 heartbeat_map is_healthy 'RGWAsyncRadosProcessor::m_tp thread 0x7f02ca7fc700' had timed out after 60
+2018-10-18 06:22:34.000797 7f030dd98700  1 heartbeat_map is_healthy 'RGWAsyncRadosProcessor::m_tp thread 0x7f02caffd700' had timed out after 60
+2018-10-18 06:22:34.000799 7f030dd98700  1 heartbeat_map is_healthy 'RGWAsyncRadosProcessor::m_tp thread 0x7f02cb7fe700' had timed out after 60
+2018-10-18 06:22:34.000801 7f030dd98700  1 heartbeat_map is_healthy 'RGWAsyncRadosProcessor::m_tp thread 0x7f02cbfff700' had timed out after 60
+2018-10-18 06:22:34.000828 7f030dd98700  1 heartbeat_map is_healthy 'RGWAsyncRadosProcessor::m_tp thread 0x7f02d0ff9700' had timed out after 60
+2018-10-18 06:22:34.000834 7f030dd98700  1 heartbeat_map is_healthy 'RGWAsyncRadosProcessor::m_tp thread 0x7f02d17fa700' had timed out after 60
+2018-10-18 06:22:34.000835 7f030dd98700  1 heartbeat_map is_healthy 'RGWAsyncRadosProcessor::m_tp thread 0x7f02d37fe700' had timed out after 60
+2018-10-18 06:22:34.000837 7f030dd98700  1 heartbeat_map is_healthy 'RGWAsyncRadosProcessor::m_tp thread 0x7f02d27fc700' had timed out after 60
+2018-10-18 06:22:34.000838 7f030dd98700  1 heartbeat_map is_healthy 'RGWAsyncRadosProcessor::m_tp thread 0x7f02d2ffd700' had timed out after 60
+2018-10-18 06:22:34.000840 7f030dd98700  1 heartbeat_map is_healthy 'RGWAsyncRadosProcessor::m_tp thread 0x7f02d3fff700' had timed out after 60
+2018-10-18 06:22:34.000841 7f030dd98700  1 heartbeat_map is_healthy 'RGWAsyncRadosProcessor::m_tp thread 0x7f02f17fa700' had timed out after 60
+2018-10-18 06:22:34.000843 7f030dd98700  1 heartbeat_map is_healthy 'RGWAsyncRadosProcessor::m_tp thread 0x7f02f0ff9700' had timed out after 60
+2018-10-18 06:22:34.000917 7f02be7fc700  1 heartbeat_map reset_timeout 'RGWAsyncRadosProcessor::m_tp thread 0x7f02be7fc700' had timed out after 60
+2018-10-18 06:22:34.000955 7f02cb7fe700  1 heartbeat_map reset_timeout 'RGWAsyncRadosProcessor::m_tp thread 0x7f02cb7fe700' had timed out after 60
+2018-10-18 06:22:34.000978 7f02caffd700  1 heartbeat_map reset_timeout 'RGWAsyncRadosProcessor::m_tp thread 0x7f02caffd700' had timed out after 60
+2018-10-18 06:22:34.000999 7f02c5ff3700  1 heartbeat_map reset_timeout 'RGWAsyncRadosProcessor::m_tp thread 0x7f02c5ff3700' had timed out after 60
+2018-10-18 06:22:34.001008 7f02c9ffb700  1 heartbeat_map reset_timeout 'RGWAsyncRadosProcessor::m_tp thread 0x7f02c9ffb700' had timed out after 60
+2018-10-18 06:22:34.001022 7f02c4ff1700  1 heartbeat_map reset_timeout 'RGWAsyncRadosProcessor::m_tp thread 0x7f02c4ff1700' had timed out after 60
+2018-10-18 06:22:34.001034 7f02c77f6700  1 heartbeat_map reset_timeout 'RGWAsyncRadosProcessor::m_tp thread 0x7f02c77f6700' had timed out after 60
+2018-10-18 06:22:34.001050 7f02d37fe700  1 heartbeat_map reset_timeout 'RGWAsyncRadosProcessor::m_tp thread 0x7f02d37fe700' had timed out after 60
+2018-10-18 06:22:34.001060 7f02c8ff9700  1 heartbeat_map reset_timeout 'RGWAsyncRadosProcessor::m_tp thread 0x7f02c8ff9700' had timed out after 60
+2018-10-18 06:22:34.001078 7f02c7ff7700  1 heartbeat_map reset_timeout 'RGWAsyncRadosProcessor::m_tp thread 0x7f02c7ff7700' had timed out after 60
+2018-10-18 06:22:34.001086 7f02cbfff700  1 heartbeat_map reset_timeout 'RGWAsyncRadosProcessor::m_tp thread 0x7f02cbfff700' had timed out after 60
+2018-10-18 06:22:34.001327 7f02d17fa700  1 heartbeat_map reset_timeout 'RGWAsyncRadosProcessor::m_tp thread 0x7f02d17fa700' had timed out after 60
+2018-10-18 06:22:34.001359 7f02d27fc700  1 heartbeat_map reset_timeout 'RGWAsyncRadosProcessor::m_tp thread 0x7f02d27fc700' had timed out after 60
+2018-10-18 06:22:34.001368 7f02bd7fa700  1 heartbeat_map reset_timeout 'RGWAsyncRadosProcessor::m_tp thread 0x7f02bd7fa700' had timed out after 60
+2018-10-18 06:22:34.002483 7f02d2ffd700  1 heartbeat_map reset_timeout 'RGWAsyncRadosProcessor::m_tp thread 0x7f02d2ffd700' had timed out after 60
+2018-10-18 06:22:34.002518 7f02d3fff700  1 heartbeat_map reset_timeout 'RGWAsyncRadosProcessor::m_tp thread 0x7f02d3fff700' had timed out after 60
+2018-10-18 06:22:34.002538 7f02bffff700  1 heartbeat_map reset_timeout 'RGWAsyncRadosProcessor::m_tp thread 0x7f02bffff700' had timed out after 60
+2018-10-18 06:22:34.002556 7f02f17fa700  1 heartbeat_map reset_timeout 'RGWAsyncRadosProcessor::m_tp thread 0x7f02f17fa700' had timed out after 60
+2018-10-18 06:22:34.002574 7f02d0ff9700  1 heartbeat_map reset_timeout 'RGWAsyncRadosProcessor::m_tp thread 0x7f02d0ff9700' had timed out after 60
+2018-10-18 06:22:34.002592 7f02bf7fe700  1 heartbeat_map reset_timeout 'RGWAsyncRadosProcessor::m_tp thread 0x7f02bf7fe700' had timed out after 60
+2018-10-18 06:22:34.002609 7f02c97fa700  1 heartbeat_map reset_timeout 'RGWAsyncRadosProcessor::m_tp thread 0x7f02c97fa700' had timed out after 60
+2018-10-18 06:22:34.002627 7f02c57f2700  1 heartbeat_map reset_timeout 'RGWAsyncRadosProcessor::m_tp thread 0x7f02c57f2700' had timed out after 60
+2018-10-18 06:22:34.002644 7f02ca7fc700  1 heartbeat_map reset_timeout 'RGWAsyncRadosProcessor::m_tp thread 0x7f02ca7fc700' had timed out after 60
+2018-10-18 06:22:34.002662 7f02f0ff9700  1 heartbeat_map reset_timeout 'RGWAsyncRadosProcessor::m_tp thread 0x7f02f0ff9700' had timed out after 60
+2018-10-18 06:22:34.010344 7f0304ff9700 -1 RGWWatcher::handle_error cookie 94000131729360 err (107) Transport endpoint is not connected
+2018-10-18 06:22:34.010416 7f0304ff9700 -1 RGWWatcher::handle_error cookie 94000131743664 err (107) Transport endpoint is not connected
+2018-10-18 06:22:50.035019 7f0263fe7700  1 ====== starting new request req=0x7f0263fe15b0 =====
+2018-10-18 06:22:50.048828 7f0263fe7700  1 ====== req done req=0x7f0263fe15b0 op status=0 http_status=204 ======
+2018-10-18 06:22:50.048936 7f0263fe7700  1 civetweb: 0x7f02a0000ea0: 192.168.136.188 - - [18/Oct/2018:06:22:50 +0000] "GET /auth HTTP/1.1" 1 0 - python-requests/2.6.0 CPython/2.7.5 Linux/3.10.0-693.el7.x86_64
+2018-10-18 06:22:50.056218 7f02637e6700  1 ====== starting new request req=0x7f02637e05b0 =====
+2018-10-18 06:22:50.080651 7f02637e6700  1 ====== req done req=0x7f02637e05b0 op status=0 http_status=200 ======
+2018-10-18 06:22:50.080826 7f02637e6700  1 civetweb: 0x7f02a8000ea0: 192.168.136.188 - - [18/Oct/2018:06:22:50 +0000] "HEAD /eisoo/ HTTP/1.1" 1 0 - Boto/2.49.0 Python/2.7.5 Linux/3.10.0-693.el7.x86_64
+2018-10-18 06:22:50.083747 7f02637e6700  1 ====== starting new request req=0x7f02637e05b0 =====
+2018-10-18 06:22:50.095664 7f02637e6700  1 ====== req done req=0x7f02637e05b0 op status=0 http_status=200 ======
+2018-10-18 06:22:50.095820 7f02637e6700  1 civetweb: 0x7f02a8000ea0: 192.168.136.188 - - [18/Oct/2018:06:22:50 +0000] "PUT /eisoo/?cors HTTP/1.1" 1 0 - Boto/2.49.0 Python/2.7.5 Linux/3.10.0-693.el7.x86_64
+2018-10-18 06:22:50.101182 7f0262fe5700  1 ====== starting new request req=0x7f0262fdf5b0 =====
+2018-10-18 06:22:50.112193 7f0262fe5700  1 ====== req done req=0x7f0262fdf5b0 op status=0 http_status=200 ======
+2018-10-18 06:22:50.112291 7f0262fe5700  1 civetweb: 0x7f02ac000ea0: 192.168.136.188 - - [18/Oct/2018:06:22:50 +0000] "GET /swift/v1 HTTP/1.1" 1 0 - python-requests/2.6.0 CPython/2.7.5 Linux/3.10.0-693.el7.x86_64
+2018-10-18 06:22:50.116902 7f02617e2700  1 ====== starting new request req=0x7f02617dc5b0 =====
+2018-10-18 06:22:50.124343 7f02617e2700  1 ====== req done req=0x7f02617dc5b0 op status=0 http_status=200 ======
+2018-10-18 06:22:50.124445 7f02617e2700  1 civetweb: 0x7f02b0000ea0: 192.168.136.188 - - [18/Oct/2018:06:22:50 +0000] "GET /swift/v1/abc HTTP/1.1" 1 0 - python-requests/2.6.0 CPython/2.7.5 Linux/3.10.0-693.el7.x86_64
+2018-10-18 06:22:50.129562 7f02617e2700  1 ====== starting new request req=0x7f02617dc5b0 =====
+2018-10-18 06:22:50.131803 7f02617e2700  1 ====== req done req=0x7f02617dc5b0 op status=0 http_status=200 ======
+2018-10-18 06:22:50.131893 7f02617e2700  1 civetweb: 0x7f02b0000ea0: 192.168.136.188 - - [18/Oct/2018:06:22:50 +0000] "GET /swift/v1/abc/def HTTP/1.1" 1 0 - python-requests/2.6.0 CPython/2.7.5 Linux/3.10.0-693.el7.x86_64
+2018-10-18 06:22:50.140635 7f02627e4700  1 ====== starting new request req=0x7f02627de5b0 =====
+2018-10-18 06:22:50.145129 7f02627e4700  1 ====== req done req=0x7f02627de5b0 op status=0 http_status=200 ======
+2018-10-18 06:22:50.145298 7f02627e4700  1 civetweb: 0x7f02d4003e80: 192.168.136.188 - - [18/Oct/2018:06:22:50 +0000] "GET /swift/v1/abc/def/a HTTP/1.1" 1 0 - python-requests/2.6.0 CPython/2.7.5 Linux/3.10.0-693.el7.x86_64
+2018-10-18 06:22:50.162258 7f0260fe1700  1 ====== starting new request req=0x7f0260fdb5b0 =====
+2018-10-18 06:22:50.171564 7f0260fe1700  1 ====== req done req=0x7f0260fdb5b0 op status=0 http_status=200 ======
+2018-10-18 06:22:50.171666 7f0260fe1700  1 civetweb: 0x7f02dc00b980: 192.168.136.188 - - [18/Oct/2018:06:22:50 +0000] "GET /swift/v1/eisoo HTTP/1.1" 1 0 - python-requests/2.6.0 CPython/2.7.5 Linux/3.10.0-693.el7.x86_64
+2018-10-18 06:22:50.177323 7f025ffdf700  1 ====== starting new request req=0x7f025ffd95b0 =====
+2018-10-18 06:22:50.180207 7f025ffdf700  1 ====== req done req=0x7f025ffd95b0 op status=0 http_status=200 ======
+2018-10-18 06:22:50.180318 7f025ffdf700  1 civetweb: 0x7f02b8000ea0: 192.168.136.188 - - [18/Oct/2018:06:22:50 +0000] "GET /swift/v1/eisoo/badde6e3-5a6f-473c-b0d2-c1b1f6e31810/connection-test/object HTTP/1.1" 1 0 - python-requests/2.6.0 CPython/2.7.5 Linux/3.10.0-693.el7.x86_64
+2018-10-18 06:24:19.042720 7f025e7dc700  1 ====== starting new request req=0x7f025e7d65b0 =====
+2018-10-18 06:24:19.067020 7f025e7dc700  1 ====== req done req=0x7f025e7d65b0 op status=0 http_status=200 ======
+2018-10-18 06:24:19.067156 7f025e7dc700  1 civetweb: 0x7f02c0004560: 127.0.0.1 - - [18/Oct/2018:06:24:19 +0000] "PUT /eisoo/badde6e3-5a6f-473c-b0d2-c1b1f6e31810/connection-test/object HTTP/1.0" 1 0 - -
+2018-10-18 06:24:20.389617 7f025efdd700  1 ====== starting new request req=0x7f025efd75b0 =====
+2018-10-18 06:24:20.412851 7f025efdd700  1 ====== req done req=0x7f025efd75b0 op status=0 http_status=200 ======
+2018-10-18 06:24:20.413014 7f025efdd700  1 civetweb: 0x7f02cc004570: 127.0.0.1 - - [18/Oct/2018:06:24:20 +0000] "PUT /eisoo/badde6e3-5a6f-473c-b0d2-c1b1f6e31810/connection-test/object HTTP/1.0" 1 0 - -
+2018-10-18 06:24:37.152545 7f0261fe3700  1 ====== starting new request req=0x7f0261fdd5b0 =====
+2018-10-18 06:24:37.153070 7f0261fe3700  1 ====== req done req=0x7f0261fdd5b0 op status=0 http_status=200 ======
+2018-10-18 06:24:37.153157 7f0261fe3700  1 civetweb: 0x7f02e00093c0: 127.0.0.1 - - [18/Oct/2018:06:24:37 +0000] "OPTIONS /eisoo HTTP/1.0" 1 0 - Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.100 Safari/537.36
+2018-10-18 06:24:37.157047 7f025f7de700  1 ====== starting new request req=0x7f025f7d85b0 =====
+2018-10-18 06:24:37.158226 7f025f7de700  1 policy condition check $Content-Type [application/octet-stream] application/octet-stream [application/octet-stream]
+2018-10-18 06:24:37.185590 7f025f7de700  1 ====== req done req=0x7f025f7d85b0 op status=0 http_status=204 ======
+2018-10-18 06:24:37.185784 7f025f7de700  1 civetweb: 0x7f02e80108c0: 127.0.0.1 - - [18/Oct/2018:06:24:37 +0000] "POST /eisoo HTTP/1.0" 1 0 http://192.168.136.196/ Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.100 Safari/537.36
+2018-10-18 06:24:37.226318 7f025dfdb700  1 ====== starting new request req=0x7f025dfd55b0 =====
+2018-10-18 06:24:37.229922 7f025dfdb700  1 ====== req done req=0x7f025dfd55b0 op status=0 http_status=200 ======
+2018-10-18 06:24:37.230026 7f025dfdb700  1 civetweb: 0x7f02e400b980: 127.0.0.1 - - [18/Oct/2018:06:24:37 +0000] "HEAD /eisoo/badde6e3-5a6f-473c-b0d2-c1b1f6e31810/6606E4240A1F423597C4F56BA44E435B/A35D41B1796946A8BFCDC2E06204DFB4 HTTP/1.0" 1 0 - -
+2018-10-18 06:24:37.322133 7f025c7d8700  1 ====== starting new request req=0x7f025c7d25b0 =====
+2018-10-18 06:24:37.323308 7f025c7d8700  1 policy condition check $Content-Type [application/octet-stream] application/octet-stream [application/octet-stream]
+2018-10-18 06:24:37.340214 7f025c7d8700  1 ====== req done req=0x7f025c7d25b0 op status=0 http_status=204 ======
+2018-10-18 06:24:37.340383 7f025c7d8700  1 civetweb: 0x7f02ec004f30: 127.0.0.1 - - [18/Oct/2018:06:24:37 +0000] "POST /eisoo HTTP/1.0" 1 0 http://192.168.136.196/ Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.100 Safari/537.36
+2018-10-18 06:24:37.383306 7f02597d2700  1 ====== starting new request req=0x7f02597cc5b0 =====
+2018-10-18 06:24:37.385818 7f02597d2700  1 ====== req done req=0x7f02597cc5b0 op status=0 http_status=200 ======
+2018-10-18 06:24:37.385912 7f02597d2700  1 civetweb: 0x7f02f801cdd0: 127.0.0.1 - - [18/Oct/2018:06:24:37 +0000] "HEAD /eisoo/badde6e3-5a6f-473c-b0d2-c1b1f6e31810/6606E4240A1F423597C4F56BA44E435B/7541A2A4759045D79F51BA70E3801A8C HTTP/1.0" 1 0 - -
+2018-10-18 06:24:37.516334 7f0258fd1700  1 ====== starting new request req=0x7f0258fcb5b0 =====
+2018-10-18 06:24:37.517158 7f0258fd1700  1 policy condition check $Content-Type [application/octet-stream] application/octet-stream [application/octet-stream]
+2018-10-18 06:24:37.545008 7f0258fd1700  1 ====== req done req=0x7f0258fcb5b0 op status=0 http_status=204 ======
+2018-10-18 06:24:37.545174 7f0258fd1700  1 civetweb: 0x7f0270005420: 127.0.0.1 - - [18/Oct/2018:06:24:37 +0000] "POST /eisoo HTTP/1.0" 1 0 http://192.168.136.196/ Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.100 Safari/537.36
+2018-10-18 06:24:37.583902 7f025cfd9700  1 ====== starting new request req=0x7f025cfd35b0 =====
+2018-10-18 06:24:37.586595 7f025cfd9700  1 ====== req done req=0x7f025cfd35b0 op status=0 http_status=200 ======
+2018-10-18 06:24:37.586715 7f025cfd9700  1 civetweb: 0x7f02fc00aa50: 127.0.0.1 - - [18/Oct/2018:06:24:37 +0000] "HEAD /eisoo/badde6e3-5a6f-473c-b0d2-c1b1f6e31810/6606E4240A1F423597C4F56BA44E435B/9BBCDBE85ACE4B588A185D0A69DD7661 HTTP/1.0" 1 0 - -
+2018-10-18 06:24:37.671782 7f025afd5700  1 ====== starting new request req=0x7f025afcf5b0 =====
+2018-10-18 06:24:37.678044 7f025afd5700  1 policy condition check $Content-Type [application/octet-stream] application/octet-stream [application/octet-stream]
+2018-10-18 06:24:37.693990 7f025afd5700  1 ====== req done req=0x7f025afcf5b0 op status=0 http_status=204 ======
+2018-10-18 06:24:37.694162 7f025afd5700  1 civetweb: 0x7f0308003d90: 127.0.0.1 - - [18/Oct/2018:06:24:37 +0000] "POST /eisoo HTTP/1.0" 1 0 http://192.168.136.196/ Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.100 Safari/537.36
+2018-10-18 06:24:37.728184 7f02587d0700  1 ====== starting new request req=0x7f02587ca5b0 =====
+2018-10-18 06:24:37.733548 7f02587d0700  1 ====== req done req=0x7f02587ca5b0 op status=0 http_status=200 ======
+2018-10-18 06:24:37.733731 7f02587d0700  1 civetweb: 0x7f02f4009f60: 127.0.0.1 - - [18/Oct/2018:06:24:37 +0000] "HEAD /eisoo/badde6e3-5a6f-473c-b0d2-c1b1f6e31810/6606E4240A1F423597C4F56BA44E435B/CF01F7D4F15D4AB6BDCCCDAAC8C9F0CE HTTP/1.0" 1 0 - -
+2018-10-18 06:24:37.819740 7f025a7d4700  1 ====== starting new request req=0x7f025a7ce5b0 =====
+2018-10-18 06:24:37.820558 7f025a7d4700  1 policy condition check $Content-Type [application/octet-stream] application/octet-stream [application/octet-stream]
+2018-10-18 06:24:37.854356 7f025a7d4700  1 ====== req done req=0x7f025a7ce5b0 op status=0 http_status=204 ======
+2018-10-18 06:24:37.854473 7f025a7d4700  1 civetweb: 0x557e1c7b5700: 127.0.0.1 - - [18/Oct/2018:06:24:37 +0000] "POST /eisoo HTTP/1.0" 1 0 http://192.168.136.196/ Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.100 Safari/537.36
+2018-10-18 06:24:37.891714 7f025b7d6700  1 ====== starting new request req=0x7f025b7d05b0 =====
+2018-10-18 06:24:37.895351 7f025b7d6700  1 ====== req done req=0x7f025b7d05b0 op status=0 http_status=200 ======
+2018-10-18 06:24:37.895480 7f025b7d6700  1 civetweb: 0x7f0300004f30: 127.0.0.1 - - [18/Oct/2018:06:24:37 +0000] "HEAD /eisoo/badde6e3-5a6f-473c-b0d2-c1b1f6e31810/6606E4240A1F423597C4F56BA44E435B/D1B541992A95469DB33DD2C121C9F1EC HTTP/1.0" 1 0 - -
+2018-10-18 06:24:37.984050 7f025bfd7700  1 ====== starting new request req=0x7f025bfd15b0 =====
+2018-10-18 06:24:37.984975 7f025bfd7700  1 policy condition check $Content-Type [application/octet-stream] application/octet-stream [application/octet-stream]
+2018-10-18 06:24:38.001592 7f025bfd7700  1 ====== req done req=0x7f025bfd15b0 op status=0 http_status=204 ======
+2018-10-18 06:24:38.001725 7f025bfd7700  1 civetweb: 0x7f0278005150: 127.0.0.1 - - [18/Oct/2018:06:24:37 +0000] "POST /eisoo HTTP/1.0" 1 0 http://192.168.136.196/ Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.100 Safari/537.36
+2018-10-18 06:24:38.035636 7f0259fd3700  1 ====== starting new request req=0x7f0259fcd5b0 =====
+2018-10-18 06:24:38.040145 7f0259fd3700  1 ====== req done req=0x7f0259fcd5b0 op status=0 http_status=200 ======
+2018-10-18 06:24:38.040244 7f0259fd3700  1 civetweb: 0x7f027c006e10: 127.0.0.1 - - [18/Oct/2018:06:24:38 +0000] "HEAD /eisoo/badde6e3-5a6f-473c-b0d2-c1b1f6e31810/6606E4240A1F423597C4F56BA44E435B/D8A91F8BA4174EF18E94714C92FF9886 HTTP/1.0" 1 0 - -
+2018-10-18 06:24:38.160505 7f025d7da700  1 ====== starting new request req=0x7f025d7d45b0 =====
+2018-10-18 06:24:38.161469 7f025d7da700  1 policy condition check $Content-Type [application/octet-stream] application/octet-stream [application/octet-stream]
+2018-10-18 06:24:38.236995 7f025d7da700  1 ====== req done req=0x7f025d7d45b0 op status=0 http_status=204 ======
+2018-10-18 06:24:38.237100 7f025d7da700  1 civetweb: 0x7f0284000d10: 127.0.0.1 - - [18/Oct/2018:06:24:38 +0000] "POST /eisoo HTTP/1.0" 1 0 http://192.168.136.196/ Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.100 Safari/537.36
+2018-10-18 06:24:38.282575 7f02577ce700  1 ====== starting new request req=0x7f02577c85b0 =====
+2018-10-18 06:24:38.285717 7f02577ce700  1 ====== req done req=0x7f02577c85b0 op status=0 http_status=200 ======
+2018-10-18 06:24:38.285894 7f02577ce700  1 civetweb: 0x7f0280000ec0: 127.0.0.1 - - [18/Oct/2018:06:24:38 +0000] "HEAD /eisoo/badde6e3-5a6f-473c-b0d2-c1b1f6e31810/6606E4240A1F423597C4F56BA44E435B/337540E6C4E6481385FF6703214B5608 HTTP/1.0" 1 0 - -
+2018-10-18 06:24:38.455127 7f0257fcf700  1 ====== starting new request req=0x7f0257fc95b0 =====
+2018-10-18 06:24:38.456077 7f0257fcf700  1 policy condition check $Content-Type [application/octet-stream] application/octet-stream [application/octet-stream]
+2018-10-18 06:24:38.476973 7f0257fcf700  1 ====== req done req=0x7f0257fc95b0 op status=0 http_status=204 ======
+2018-10-18 06:24:38.477098 7f0257fcf700  1 civetweb: 0x7f028c004030: 127.0.0.1 - - [18/Oct/2018:06:24:38 +0000] "POST /eisoo HTTP/1.0" 1 0 http://192.168.136.196/ Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.100 Safari/537.36
+2018-10-18 06:24:38.534598 7f0256fcd700  1 ====== starting new request req=0x7f0256fc75b0 =====
+2018-10-18 06:24:38.539644 7f0256fcd700  1 ====== req done req=0x7f0256fc75b0 op status=0 http_status=200 ======
+2018-10-18 06:24:38.539764 7f0256fcd700  1 civetweb: 0x7f0288005420: 127.0.0.1 - - [18/Oct/2018:06:24:38 +0000] "HEAD /eisoo/badde6e3-5a6f-473c-b0d2-c1b1f6e31810/6606E4240A1F423597C4F56BA44E435B/E89DB2482BC243898CAFA1F68CA38819 HTTP/1.0" 1 0 - -
+2018-10-18 06:24:38.650232 7f0255fcb700  1 ====== starting new request req=0x7f0255fc55b0 =====
+2018-10-18 06:24:38.651290 7f0255fcb700  1 policy condition check $Content-Type [application/octet-stream] application/octet-stream [application/octet-stream]
+2018-10-18 06:24:38.689125 7f0255fcb700  1 ====== req done req=0x7f0255fc55b0 op status=0 http_status=204 ======
+2018-10-18 06:24:38.689250 7f0255fcb700  1 civetweb: 0x7f0290005420: 127.0.0.1 - - [18/Oct/2018:06:24:38 +0000] "POST /eisoo HTTP/1.0" 1 0 http://192.168.136.196/ Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.100 Safari/537.36
+2018-10-18 06:24:38.731083 7f02567cc700  1 ====== starting new request req=0x7f02567c65b0 =====
+2018-10-18 06:24:38.734736 7f02567cc700  1 ====== req done req=0x7f02567c65b0 op status=0 http_status=200 ======
+2018-10-18 06:24:38.734850 7f02567cc700  1 civetweb: 0x7f0294005420: 127.0.0.1 - - [18/Oct/2018:06:24:38 +0000] "HEAD /eisoo/badde6e3-5a6f-473c-b0d2-c1b1f6e31810/6606E4240A1F423597C4F56BA44E435B/F13A70A133F2476A890D33A7828407EF HTTP/1.0" 1 0 - -
+2018-10-18 06:24:38.867243 7f0253fc7700  1 ====== starting new request req=0x7f0253fc15b0 =====
+2018-10-18 06:24:38.868104 7f0253fc7700  1 policy condition check $Content-Type [application/octet-stream] application/octet-stream [application/octet-stream]
+2018-10-18 06:24:38.895126 7f0253fc7700  1 ====== req done req=0x7f0253fc15b0 op status=0 http_status=204 ======
+2018-10-18 06:24:38.895255 7f0253fc7700  1 civetweb: 0x7f02a4005420: 127.0.0.1 - - [18/Oct/2018:06:24:38 +0000] "POST /eisoo HTTP/1.0" 1 0 http://192.168.136.196/ Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.100 Safari/537.36
+2018-10-18 06:24:38.924122 7f0254fc9700  1 ====== starting new request req=0x7f0254fc35b0 =====
+2018-10-18 06:24:38.927861 7f0254fc9700  1 ====== req done req=0x7f0254fc35b0 op status=0 http_status=200 ======
+2018-10-18 06:24:38.928173 7f0254fc9700  1 civetweb: 0x7f029c001a20: 127.0.0.1 - - [18/Oct/2018:06:24:38 +0000] "HEAD /eisoo/badde6e3-5a6f-473c-b0d2-c1b1f6e31810/6606E4240A1F423597C4F56BA44E435B/5B1B5887269A4A5C8CC5F10FE59611AC HTTP/1.0" 1 0 - -
+2018-10-18 06:24:39.110671 7f02557ca700  1 ====== starting new request req=0x7f02557c45b0 =====
+2018-10-18 06:24:39.112225 7f02557ca700  1 policy condition check $Content-Type [application/octet-stream] application/octet-stream [application/octet-stream]
+2018-10-18 06:24:39.128363 7f02557ca700  1 ====== req done req=0x7f02557c45b0 op status=0 http_status=204 ======
+2018-10-18 06:24:39.128480 7f02557ca700  1 civetweb: 0x7f02ac005420: 127.0.0.1 - - [18/Oct/2018:06:24:39 +0000] "POST /eisoo HTTP/1.0" 1 0 http://192.168.136.196/ Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.100 Safari/537.36
+2018-10-18 06:24:39.159137 7f02547c8700  1 ====== starting new request req=0x7f02547c25b0 =====
+2018-10-18 06:24:39.163356 7f02547c8700  1 ====== req done req=0x7f02547c25b0 op status=0 http_status=200 ======
+2018-10-18 06:24:39.163482 7f02547c8700  1 civetweb: 0x7f0298005420: 127.0.0.1 - - [18/Oct/2018:06:24:39 +0000] "HEAD /eisoo/badde6e3-5a6f-473c-b0d2-c1b1f6e31810/6606E4240A1F423597C4F56BA44E435B/A3979A4B891C47F8868DADB56027E963 HTTP/1.0" 1 0 - -
+2018-10-18 06:24:39.258311 7f0252fc5700  1 ====== starting new request req=0x7f0252fbf5b0 =====
+2018-10-18 06:24:39.259670 7f0252fc5700  1 policy condition check $Content-Type [application/octet-stream] application/octet-stream [application/octet-stream]
+2018-10-18 06:24:39.283592 7f0252fc5700  1 ====== req done req=0x7f0252fbf5b0 op status=0 http_status=204 ======
+2018-10-18 06:24:39.283718 7f0252fc5700  1 civetweb: 0x7f02a8005420: 127.0.0.1 - - [18/Oct/2018:06:24:39 +0000] "POST /eisoo HTTP/1.0" 1 0 http://192.168.136.196/ Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.100 Safari/537.36
+2018-10-18 06:24:39.309913 7f02537c6700  1 ====== starting new request req=0x7f02537c05b0 =====
+2018-10-18 06:24:39.313039 7f02537c6700  1 ====== req done req=0x7f02537c05b0 op status=0 http_status=200 ======
+2018-10-18 06:24:39.313217 7f02537c6700  1 civetweb: 0x7f02a0005420: 127.0.0.1 - - [18/Oct/2018:06:24:39 +0000] "HEAD /eisoo/badde6e3-5a6f-473c-b0d2-c1b1f6e31810/6606E4240A1F423597C4F56BA44E435B/32C902CB70AD47F09239499B136F1531 HTTP/1.0" 1 0 - -
+2018-10-18 06:24:41.632986 7f02527c4700  1 ====== starting new request req=0x7f02527be5b0 =====
+2018-10-18 06:24:41.640865 7f02527c4700  1 ====== req done req=0x7f02527be5b0 op status=0 http_status=206 ======
+2018-10-18 06:24:41.641004 7f02527c4700  1 civetweb: 0x7f02b0005420: 127.0.0.1 - - [18/Oct/2018:06:24:41 +0000] "GET /eisoo/badde6e3-5a6f-473c-b0d2-c1b1f6e31810/6606E4240A1F423597C4F56BA44E435B/A35D41B1796946A8BFCDC2E06204DFB4 HTTP/1.0" 1 0 - -
+2018-10-18 06:24:41.739026 7f02517c2700  1 ====== starting new request req=0x7f02517bc5b0 =====
+2018-10-18 06:24:41.743129 7f02517c2700  1 ====== req done req=0x7f02517bc5b0 op status=0 http_status=206 ======
+2018-10-18 06:24:41.743233 7f02517c2700  1 civetweb: 0x7f02b8005420: 127.0.0.1 - - [18/Oct/2018:06:24:41 +0000] "GET /eisoo/badde6e3-5a6f-473c-b0d2-c1b1f6e31810/6606E4240A1F423597C4F56BA44E435B/7541A2A4759045D79F51BA70E3801A8C HTTP/1.0" 1 0 - -
+2018-10-18 06:24:41.819979 7f0251fc3700  1 ====== starting new request req=0x7f0251fbd5b0 =====
+2018-10-18 06:24:41.823651 7f0251fc3700  1 ====== req done req=0x7f0251fbd5b0 op status=0 http_status=206 ======
+2018-10-18 06:24:41.823777 7f0251fc3700  1 civetweb: 0x7f02c0008e10: 127.0.0.1 - - [18/Oct/2018:06:24:41 +0000] "GET /eisoo/badde6e3-5a6f-473c-b0d2-c1b1f6e31810/6606E4240A1F423597C4F56BA44E435B/9BBCDBE85ACE4B588A185D0A69DD7661 HTTP/1.0" 1 0 - -
+2018-10-18 06:24:41.874820 7f0250fc1700  1 ====== starting new request req=0x7f0250fbb5b0 =====
+2018-10-18 06:24:41.882932 7f0250fc1700  1 ====== req done req=0x7f0250fbb5b0 op status=0 http_status=206 ======
+2018-10-18 06:24:41.883051 7f0250fc1700  1 civetweb: 0x7f02cc008fc0: 127.0.0.1 - - [18/Oct/2018:06:24:41 +0000] "GET /eisoo/badde6e3-5a6f-473c-b0d2-c1b1f6e31810/6606E4240A1F423597C4F56BA44E435B/CF01F7D4F15D4AB6BDCCCDAAC8C9F0CE HTTP/1.0" 1 0 - -
+2018-10-18 06:24:41.948542 7f02507c0700  1 ====== starting new request req=0x7f02507ba5b0 =====
+2018-10-18 06:24:41.954538 7f02507c0700  1 ====== req done req=0x7f02507ba5b0 op status=0 http_status=206 ======
+2018-10-18 06:24:41.954665 7f02507c0700  1 civetweb: 0x7f02d800de50: 127.0.0.1 - - [18/Oct/2018:06:24:41 +0000] "GET /eisoo/badde6e3-5a6f-473c-b0d2-c1b1f6e31810/6606E4240A1F423597C4F56BA44E435B/D1B541992A95469DB33DD2C121C9F1EC HTTP/1.0" 1 0 - -
+2018-10-18 06:24:42.091263 7f024efbd700  1 ====== starting new request req=0x7f024efb75b0 =====
+2018-10-18 06:24:42.095723 7f024efbd700  1 ====== req done req=0x7f024efb75b0 op status=0 http_status=206 ======
+2018-10-18 06:24:42.095988 7f024efbd700  1 civetweb: 0x7f02d4008790: 127.0.0.1 - - [18/Oct/2018:06:24:42 +0000] "GET /eisoo/badde6e3-5a6f-473c-b0d2-c1b1f6e31810/6606E4240A1F423597C4F56BA44E435B/D8A91F8BA4174EF18E94714C92FF9886 HTTP/1.0" 1 0 - -
+2018-10-18 06:24:42.178219 7f024ffbf700  1 ====== starting new request req=0x7f024ffb95b0 =====
+2018-10-18 06:24:42.183407 7f024ffbf700  1 ====== req done req=0x7f024ffb95b0 op status=0 http_status=206 ======
+2018-10-18 06:24:42.183515 7f024ffbf700  1 civetweb: 0x7f02e400ff00: 127.0.0.1 - - [18/Oct/2018:06:24:42 +0000] "GET /eisoo/badde6e3-5a6f-473c-b0d2-c1b1f6e31810/6606E4240A1F423597C4F56BA44E435B/337540E6C4E6481385FF6703214B5608 HTTP/1.0" 1 0 - -
+2018-10-18 06:24:42.247822 7f024dfbb700  1 ====== starting new request req=0x7f024dfb55b0 =====
+2018-10-18 06:24:42.252438 7f024dfbb700  1 ====== req done req=0x7f024dfb55b0 op status=0 http_status=206 ======
+2018-10-18 06:24:42.252554 7f024dfbb700  1 civetweb: 0x7f02e000d940: 127.0.0.1 - - [18/Oct/2018:06:24:42 +0000] "GET /eisoo/badde6e3-5a6f-473c-b0d2-c1b1f6e31810/6606E4240A1F423597C4F56BA44E435B/E89DB2482BC243898CAFA1F68CA38819 HTTP/1.0" 1 0 - -
+2018-10-18 06:24:42.330469 7f024e7bc700  1 ====== starting new request req=0x7f024e7b65b0 =====
+2018-10-18 06:24:42.333233 7f024e7bc700  1 ====== req done req=0x7f024e7b65b0 op status=0 http_status=206 ======
+2018-10-18 06:24:42.333562 7f024e7bc700  1 civetweb: 0x7f02e8014e40: 127.0.0.1 - - [18/Oct/2018:06:24:42 +0000] "GET /eisoo/badde6e3-5a6f-473c-b0d2-c1b1f6e31810/6606E4240A1F423597C4F56BA44E435B/F13A70A133F2476A890D33A7828407EF HTTP/1.0" 1 0 - -
+2018-10-18 06:24:42.452401 7f024d7ba700  1 ====== starting new request req=0x7f024d7b45b0 =====
+2018-10-18 06:24:42.455851 7f024d7ba700  1 ====== req done req=0x7f024d7b45b0 op status=0 http_status=206 ======
+2018-10-18 06:24:42.455958 7f024d7ba700  1 civetweb: 0x7f02ec0094b0: 127.0.0.1 - - [18/Oct/2018:06:24:42 +0000] "GET /eisoo/badde6e3-5a6f-473c-b0d2-c1b1f6e31810/6606E4240A1F423597C4F56BA44E435B/5B1B5887269A4A5C8CC5F10FE59611AC HTTP/1.0" 1 0 - -
+2018-10-18 06:24:42.701736 7f024cfb9700  1 ====== starting new request req=0x7f024cfb35b0 =====
+2018-10-18 06:24:42.705145 7f024cfb9700  1 ====== req done req=0x7f024cfb35b0 op status=0 http_status=206 ======
+2018-10-18 06:24:42.705303 7f024cfb9700  1 civetweb: 0x7f02f8021350: 127.0.0.1 - - [18/Oct/2018:06:24:42 +0000] "GET /eisoo/badde6e3-5a6f-473c-b0d2-c1b1f6e31810/6606E4240A1F423597C4F56BA44E435B/A3979A4B891C47F8868DADB56027E963 HTTP/1.0" 1 0 - -
+2018-10-18 06:24:42.805300 7f024f7be700  1 ====== starting new request req=0x7f024f7b85b0 =====
+2018-10-18 06:24:42.812565 7f024f7be700  1 ====== req done req=0x7f024f7b85b0 op status=0 http_status=206 ======
+2018-10-18 06:24:42.812730 7f024f7be700  1 civetweb: 0x7f02dc00ff00: 127.0.0.1 - - [18/Oct/2018:06:24:42 +0000] "GET /eisoo/badde6e3-5a6f-473c-b0d2-c1b1f6e31810/6606E4240A1F423597C4F56BA44E435B/32C902CB70AD47F09239499B136F1531 HTTP/1.0" 1 0 - -
+2018-10-18 06:25:03.755617 7f024bfb7700  1 ====== starting new request req=0x7f024bfb15b0 =====
+2018-10-18 06:25:03.778123 7f024bfb7700  1 ====== req done req=0x7f024bfb15b0 op status=0 http_status=204 ======
+2018-10-18 06:25:03.778256 7f024bfb7700  1 civetweb: 0x7f02f400e4e0: 127.0.0.1 - - [18/Oct/2018:06:25:03 +0000] "DELETE /eisoo/badde6e3-5a6f-473c-b0d2-c1b1f6e31810/6606E4240A1F423597C4F56BA44E435B/32C902CB70AD47F09239499B136F1531 HTTP/1.0" 1 0 - -
+2018-10-18 06:25:03.879911 7f024b7b6700  1 ====== starting new request req=0x7f024b7b05b0 =====
+2018-10-18 06:25:03.902546 7f024b7b6700  1 ====== req done req=0x7f024b7b05b0 op status=0 http_status=204 ======
+2018-10-18 06:25:03.902697 7f024b7b6700  1 civetweb: 0x7f02fc00efd0: 127.0.0.1 - - [18/Oct/2018:06:25:03 +0000] "DELETE /eisoo/badde6e3-5a6f-473c-b0d2-c1b1f6e31810/6606E4240A1F423597C4F56BA44E435B/A3979A4B891C47F8868DADB56027E963 HTTP/1.0" 1 0 - -
+2018-10-18 06:25:03.947269 7f024afb5700  1 ====== starting new request req=0x7f024afaf5b0 =====
+2018-10-18 06:25:03.967895 7f024afb5700  1 ====== req done req=0x7f024afaf5b0 op status=0 http_status=204 ======
+2018-10-18 06:25:03.968027 7f024afb5700  1 civetweb: 0x7f03000094b0: 127.0.0.1 - - [18/Oct/2018:06:25:03 +0000] "DELETE /eisoo/badde6e3-5a6f-473c-b0d2-c1b1f6e31810/6606E4240A1F423597C4F56BA44E435B/5B1B5887269A4A5C8CC5F10FE59611AC HTTP/1.0" 1 0 - -
+2018-10-18 06:25:04.037772 7f024a7b4700  1 ====== starting new request req=0x7f024a7ae5b0 =====
+2018-10-18 06:25:04.062831 7f024a7b4700  1 ====== req done req=0x7f024a7ae5b0 op status=0 http_status=204 ======
+2018-10-18 06:25:04.063183 7f024a7b4700  1 civetweb: 0x7f0308008310: 127.0.0.1 - - [18/Oct/2018:06:25:04 +0000] "DELETE /eisoo/badde6e3-5a6f-473c-b0d2-c1b1f6e31810/6606E4240A1F423597C4F56BA44E435B/F13A70A133F2476A890D33A7828407EF HTTP/1.0" 1 0 - -
+2018-10-18 06:25:04.108382 7f0249fb3700  1 ====== starting new request req=0x7f0249fad5b0 =====
+2018-10-18 06:25:04.131363 7f0249fb3700  1 ====== req done req=0x7f0249fad5b0 op status=0 http_status=204 ======
+2018-10-18 06:25:04.131498 7f0249fb3700  1 civetweb: 0x557e1c7bed20: 127.0.0.1 - - [18/Oct/2018:06:25:04 +0000] "DELETE /eisoo/badde6e3-5a6f-473c-b0d2-c1b1f6e31810/6606E4240A1F423597C4F56BA44E435B/E89DB2482BC243898CAFA1F68CA38819 HTTP/1.0" 1 0 - -
+2018-10-18 06:25:04.175509 7f024c7b8700  1 ====== starting new request req=0x7f024c7b25b0 =====
+2018-10-18 06:25:04.204947 7f024c7b8700  1 ====== req done req=0x7f024c7b25b0 op status=0 http_status=204 ======
+2018-10-18 06:25:04.205080 7f024c7b8700  1 civetweb: 0x7f02780096d0: 127.0.0.1 - - [18/Oct/2018:06:25:04 +0000] "DELETE /eisoo/badde6e3-5a6f-473c-b0d2-c1b1f6e31810/6606E4240A1F423597C4F56BA44E435B/337540E6C4E6481385FF6703214B5608 HTTP/1.0" 1 0 - -
+2018-10-18 06:25:04.283478 7f0248fb1700  1 ====== starting new request req=0x7f0248fab5b0 =====
+2018-10-18 06:25:04.305216 7f0248fb1700  1 ====== req done req=0x7f0248fab5b0 op status=0 http_status=204 ======
+2018-10-18 06:25:04.305491 7f0248fb1700  1 civetweb: 0x7f027c00b390: 127.0.0.1 - - [18/Oct/2018:06:25:04 +0000] "DELETE /eisoo/badde6e3-5a6f-473c-b0d2-c1b1f6e31810/6606E4240A1F423597C4F56BA44E435B/D8A91F8BA4174EF18E94714C92FF9886 HTTP/1.0" 1 0 - -
+2018-10-18 06:25:04.350949 7f02487b0700  1 ====== starting new request req=0x7f02487aa5b0 =====
+2018-10-18 06:25:04.373279 7f02487b0700  1 ====== req done req=0x7f02487aa5b0 op status=0 http_status=204 ======
+2018-10-18 06:25:04.373411 7f02487b0700  1 civetweb: 0x7f0284005290: 127.0.0.1 - - [18/Oct/2018:06:25:04 +0000] "DELETE /eisoo/badde6e3-5a6f-473c-b0d2-c1b1f6e31810/6606E4240A1F423597C4F56BA44E435B/D1B541992A95469DB33DD2C121C9F1EC HTTP/1.0" 1 0 - -
+2018-10-18 06:25:04.430937 7f02497b2700  1 ====== starting new request req=0x7f02497ac5b0 =====
+2018-10-18 06:25:04.451364 7f02497b2700  1 ====== req done req=0x7f02497ac5b0 op status=0 http_status=204 ======
+2018-10-18 06:25:04.451498 7f02497b2700  1 civetweb: 0x7f02700099a0: 127.0.0.1 - - [18/Oct/2018:06:25:04 +0000] "DELETE /eisoo/badde6e3-5a6f-473c-b0d2-c1b1f6e31810/6606E4240A1F423597C4F56BA44E435B/9BBCDBE85ACE4B588A185D0A69DD7661 HTTP/1.0" 1 0 - -
+2018-10-18 06:25:04.476596 7f0247faf700  1 ====== starting new request req=0x7f0247fa95b0 =====
+2018-10-18 06:25:04.492050 7f0247faf700  1 ====== req done req=0x7f0247fa95b0 op status=0 http_status=204 ======
+2018-10-18 06:25:04.492313 7f0247faf700  1 civetweb: 0x7f028c0085b0: 127.0.0.1 - - [18/Oct/2018:06:25:04 +0000] "DELETE /eisoo/badde6e3-5a6f-473c-b0d2-c1b1f6e31810/6606E4240A1F423597C4F56BA44E435B/CF01F7D4F15D4AB6BDCCCDAAC8C9F0CE HTTP/1.0" 1 0 - -
+2018-10-18 06:25:04.535594 7f02477ae700  1 ====== starting new request req=0x7f02477a85b0 =====
+2018-10-18 06:25:04.547938 7f02477ae700  1 ====== req done req=0x7f02477a85b0 op status=0 http_status=204 ======
+2018-10-18 06:25:04.548171 7f02477ae700  1 civetweb: 0x7f0280005440: 127.0.0.1 - - [18/Oct/2018:06:25:04 +0000] "DELETE /eisoo/badde6e3-5a6f-473c-b0d2-c1b1f6e31810/6606E4240A1F423597C4F56BA44E435B/7541A2A4759045D79F51BA70E3801A8C HTTP/1.0" 1 0 - -
+2018-10-18 06:25:04.593217 7f0246fad700  1 ====== starting new request req=0x7f0246fa75b0 =====
+2018-10-18 06:25:04.607274 7f0246fad700  1 ====== req done req=0x7f0246fa75b0 op status=0 http_status=204 ======
+2018-10-18 06:25:04.607401 7f0246fad700  1 civetweb: 0x7f02940099a0: 127.0.0.1 - - [18/Oct/2018:06:25:04 +0000] "DELETE /eisoo/badde6e3-5a6f-473c-b0d2-c1b1f6e31810/6606E4240A1F423597C4F56BA44E435B/A35D41B1796946A8BFCDC2E06204DFB4 HTTP/1.0" 1 0 - -
+2018-10-18 06:25:15.983880 7f02467ac700  1 ====== starting new request req=0x7f02467a65b0 =====
+2018-10-18 06:25:15.984327 7f02467ac700  1 ====== req done req=0x7f02467a65b0 op status=0 http_status=200 ======
+2018-10-18 06:25:15.984427 7f02467ac700  1 civetweb: 0x7f02880099a0: 127.0.0.1 - - [18/Oct/2018:06:25:15 +0000] "OPTIONS /eisoo HTTP/1.0" 1 0 - Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.100 Safari/537.36
+2018-10-18 06:25:15.991232 7f0245fab700  1 ====== starting new request req=0x7f0245fa55b0 =====
+2018-10-18 06:25:15.991974 7f0245fab700  1 policy condition check $Content-Type [application/octet-stream] application/octet-stream [application/octet-stream]
+2018-10-18 06:25:16.004445 7f0245fab700  1 ====== req done req=0x7f0245fa55b0 op status=0 http_status=204 ======
+2018-10-18 06:25:16.004555 7f0245fab700  1 civetweb: 0x7f02900099a0: 127.0.0.1 - - [18/Oct/2018:06:25:15 +0000] "POST /eisoo HTTP/1.0" 1 0 http://192.168.136.196/ Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.100 Safari/537.36
+2018-10-18 06:25:16.066779 7f0244fa9700  1 ====== starting new request req=0x7f0244fa35b0 =====
+2018-10-18 06:25:16.069172 7f0244fa9700  1 ====== req done req=0x7f0244fa35b0 op status=0 http_status=200 ======
+2018-10-18 06:25:16.069268 7f0244fa9700  1 civetweb: 0x7f02980099a0: 127.0.0.1 - - [18/Oct/2018:06:25:16 +0000] "HEAD /eisoo/badde6e3-5a6f-473c-b0d2-c1b1f6e31810/6606E4240A1F423597C4F56BA44E435B/ECD7B91C7CD94383AE1E32167E810791 HTTP/1.0" 1 0 - -
+2018-10-18 06:25:16.177655 7f02457aa700  1 ====== starting new request req=0x7f02457a45b0 =====
+2018-10-18 06:25:16.178498 7f02457aa700  1 policy condition check $Content-Type [application/octet-stream] application/octet-stream [application/octet-stream]
+2018-10-18 06:25:16.191441 7f02457aa700  1 ====== req done req=0x7f02457a45b0 op status=0 http_status=204 ======
+2018-10-18 06:25:16.191547 7f02457aa700  1 civetweb: 0x7f029c006e20: 127.0.0.1 - - [18/Oct/2018:06:25:16 +0000] "POST /eisoo HTTP/1.0" 1 0 http://192.168.136.196/ Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.100 Safari/537.36
+2018-10-18 06:25:16.234131 7f02447a8700  1 ====== starting new request req=0x7f02447a25b0 =====
+2018-10-18 06:25:16.239021 7f02447a8700  1 ====== req done req=0x7f02447a25b0 op status=0 http_status=200 ======
+2018-10-18 06:25:16.239137 7f02447a8700  1 civetweb: 0x7f02a00099a0: 127.0.0.1 - - [18/Oct/2018:06:25:16 +0000] "HEAD /eisoo/badde6e3-5a6f-473c-b0d2-c1b1f6e31810/6606E4240A1F423597C4F56BA44E435B/28B91166EE3D4D899DFA281FB091B31D HTTP/1.0" 1 0 - -
+2018-10-18 06:25:16.342206 7f0243fa7700  1 ====== starting new request req=0x7f0243fa15b0 =====
+2018-10-18 06:25:16.342983 7f0243fa7700  1 policy condition check $Content-Type [application/octet-stream] application/octet-stream [application/octet-stream]
+2018-10-18 06:25:16.371529 7f0243fa7700  1 ====== req done req=0x7f0243fa15b0 op status=0 http_status=204 ======
+2018-10-18 06:25:16.371664 7f0243fa7700  1 civetweb: 0x7f02ac0099a0: 127.0.0.1 - - [18/Oct/2018:06:25:16 +0000] "POST /eisoo HTTP/1.0" 1 0 http://192.168.136.196/ Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.100 Safari/537.36
+2018-10-18 06:25:16.423354 7f02437a6700  1 ====== starting new request req=0x7f02437a05b0 =====
+2018-10-18 06:25:16.426301 7f02437a6700  1 ====== req done req=0x7f02437a05b0 op status=0 http_status=200 ======
+2018-10-18 06:25:16.426401 7f02437a6700  1 civetweb: 0x7f02a80099a0: 127.0.0.1 - - [18/Oct/2018:06:25:16 +0000] "HEAD /eisoo/badde6e3-5a6f-473c-b0d2-c1b1f6e31810/6606E4240A1F423597C4F56BA44E435B/B70EDE8C14F448DE95564F902C7C8195 HTTP/1.0" 1 0 - -
+2018-10-18 06:25:16.561080 7f0242fa5700  1 ====== starting new request req=0x7f0242f9f5b0 =====
+2018-10-18 06:25:16.562022 7f0242fa5700  1 policy condition check $Content-Type [application/octet-stream] application/octet-stream [application/octet-stream]
+2018-10-18 06:25:16.584204 7f0242fa5700  1 ====== req done req=0x7f0242f9f5b0 op status=0 http_status=204 ======
+2018-10-18 06:25:16.584319 7f0242fa5700  1 civetweb: 0x7f02c000dc80: 127.0.0.1 - - [18/Oct/2018:06:25:16 +0000] "POST /eisoo HTTP/1.0" 1 0 http://192.168.136.196/ Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.100 Safari/537.36
+2018-10-18 06:25:16.619385 7f02407a0700  1 ====== starting new request req=0x7f024079a5b0 =====
+2018-10-18 06:25:16.621879 7f02407a0700  1 ====== req done req=0x7f024079a5b0 op status=0 http_status=200 ======
+2018-10-18 06:25:16.621977 7f02407a0700  1 civetweb: 0x7f02b00099a0: 127.0.0.1 - - [18/Oct/2018:06:25:16 +0000] "HEAD /eisoo/badde6e3-5a6f-473c-b0d2-c1b1f6e31810/6606E4240A1F423597C4F56BA44E435B/2B75EC1B7FB449C8A77BEF5BD6ADC363 HTTP/1.0" 1 0 - -
+2018-10-18 06:25:16.815102 7f02417a2700  1 ====== starting new request req=0x7f024179c5b0 =====
+2018-10-18 06:25:16.815960 7f02417a2700  1 policy condition check $Content-Type [application/octet-stream] application/octet-stream [application/octet-stream]
+2018-10-18 06:25:16.836200 7f02417a2700  1 ====== req done req=0x7f024179c5b0 op status=0 http_status=204 ======
+2018-10-18 06:25:16.836318 7f02417a2700  1 civetweb: 0x7f02d400fba0: 127.0.0.1 - - [18/Oct/2018:06:25:16 +0000] "POST /eisoo HTTP/1.0" 1 0 http://192.168.136.196/ Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.100 Safari/537.36
+2018-10-18 06:25:16.896901 7f0240fa1700  1 ====== starting new request req=0x7f0240f9b5b0 =====
+2018-10-18 06:25:16.900781 7f0240fa1700  1 ====== req done req=0x7f0240f9b5b0 op status=0 http_status=200 ======
+2018-10-18 06:25:16.900877 7f0240fa1700  1 civetweb: 0x7f02b80099a0: 127.0.0.1 - - [18/Oct/2018:06:25:16 +0000] "HEAD /eisoo/badde6e3-5a6f-473c-b0d2-c1b1f6e31810/6606E4240A1F423597C4F56BA44E435B/49D851BEA6544E2898DA874E904A0484 HTTP/1.0" 1 0 - -
+2018-10-18 06:25:17.033763 7f0241fa3700  1 ====== starting new request req=0x7f0241f9d5b0 =====
+2018-10-18 06:25:17.034716 7f0241fa3700  1 policy condition check $Content-Type [application/octet-stream] application/octet-stream [application/octet-stream]
+2018-10-18 06:25:17.069117 7f0241fa3700  1 ====== req done req=0x7f0241f9d5b0 op status=0 http_status=204 ======
+2018-10-18 06:25:17.069252 7f0241fa3700  1 civetweb: 0x7f02d80135b0: 127.0.0.1 - - [18/Oct/2018:06:25:17 +0000] "POST /eisoo HTTP/1.0" 1 0 http://192.168.136.196/ Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.100 Safari/537.36
+2018-10-18 06:25:17.101825 7f023ff9f700  1 ====== starting new request req=0x7f023ff995b0 =====
+2018-10-18 06:25:17.104726 7f023ff9f700  1 ====== req done req=0x7f023ff995b0 op status=0 http_status=200 ======
+2018-10-18 06:25:17.104835 7f023ff9f700  1 civetweb: 0x7f02dc014480: 127.0.0.1 - - [18/Oct/2018:06:25:17 +0000] "HEAD /eisoo/badde6e3-5a6f-473c-b0d2-c1b1f6e31810/6606E4240A1F423597C4F56BA44E435B/F532AFE2CFEC4AC2B94A10E2D9AC5B08 HTTP/1.0" 1 0 - -
+2018-10-18 06:25:17.333386 7f02427a4700  1 ====== starting new request req=0x7f024279e5b0 =====
+2018-10-18 06:25:17.334215 7f02427a4700  1 policy condition check $Content-Type [application/octet-stream] application/octet-stream [application/octet-stream]
+2018-10-18 06:25:17.354135 7f02427a4700  1 ====== req done req=0x7f024279e5b0 op status=0 http_status=204 ======
+2018-10-18 06:25:17.354251 7f02427a4700  1 civetweb: 0x7f02cc00daa0: 127.0.0.1 - - [18/Oct/2018:06:25:17 +0000] "POST /eisoo HTTP/1.0" 1 0 http://192.168.136.196/ Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.100 Safari/537.36
+2018-10-18 06:25:17.485614 7f023ef9d700  1 ====== starting new request req=0x7f023ef975b0 =====
+2018-10-18 06:25:17.488764 7f023ef9d700  1 ====== req done req=0x7f023ef975b0 op status=0 http_status=200 ======
+2018-10-18 06:25:17.488868 7f023ef9d700  1 civetweb: 0x7f02e0011ec0: 127.0.0.1 - - [18/Oct/2018:06:25:17 +0000] "HEAD /eisoo/badde6e3-5a6f-473c-b0d2-c1b1f6e31810/6606E4240A1F423597C4F56BA44E435B/E756928B2D7A48B08A65C532E393F12B HTTP/1.0" 1 0 - -
+2018-10-18 06:25:17.618414 7f023f79e700  1 ====== starting new request req=0x7f023f7985b0 =====
+2018-10-18 06:25:17.619208 7f023f79e700  1 policy condition check $Content-Type [application/octet-stream] application/octet-stream [application/octet-stream]
+2018-10-18 06:25:17.638645 7f023f79e700  1 ====== req done req=0x7f023f7985b0 op status=0 http_status=204 ======
+2018-10-18 06:25:17.638809 7f023f79e700  1 civetweb: 0x7f02e80193c0: 127.0.0.1 - - [18/Oct/2018:06:25:17 +0000] "POST /eisoo HTTP/1.0" 1 0 http://192.168.136.196/ Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.100 Safari/537.36
+2018-10-18 06:25:17.679185 7f023df9b700  1 ====== starting new request req=0x7f023df955b0 =====
+2018-10-18 06:25:17.683330 7f023df9b700  1 ====== req done req=0x7f023df955b0 op status=0 http_status=200 ======
+2018-10-18 06:25:17.683427 7f023df9b700  1 civetweb: 0x7f02e4014480: 127.0.0.1 - - [18/Oct/2018:06:25:17 +0000] "HEAD /eisoo/badde6e3-5a6f-473c-b0d2-c1b1f6e31810/6606E4240A1F423597C4F56BA44E435B/2FC9A67586384E878E21743CEA4C5499 HTTP/1.0" 1 0 - -
+2018-10-18 06:25:17.820744 7f023e79c700  1 ====== starting new request req=0x7f023e7965b0 =====
+2018-10-18 06:25:17.821585 7f023e79c700  1 policy condition check $Content-Type [application/octet-stream] application/octet-stream [application/octet-stream]
+2018-10-18 06:25:17.843658 7f023e79c700  1 ====== req done req=0x7f023e7965b0 op status=0 http_status=204 ======
+2018-10-18 06:25:17.843804 7f023e79c700  1 civetweb: 0x7f02ec00da30: 127.0.0.1 - - [18/Oct/2018:06:25:17 +0000] "POST /eisoo HTTP/1.0" 1 0 http://192.168.136.196/ Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.100 Safari/537.36
+2018-10-18 06:25:17.878140 7f023d79a700  1 ====== starting new request req=0x7f023d7945b0 =====
+2018-10-18 06:25:17.881017 7f023d79a700  1 ====== req done req=0x7f023d7945b0 op status=0 http_status=200 ======
+2018-10-18 06:25:17.881117 7f023d79a700  1 civetweb: 0x7f02f80258d0: 127.0.0.1 - - [18/Oct/2018:06:25:17 +0000] "HEAD /eisoo/badde6e3-5a6f-473c-b0d2-c1b1f6e31810/6606E4240A1F423597C4F56BA44E435B/DABA4DAD72D342E3A3504661DF41367D HTTP/1.0" 1 0 - -
+2018-10-18 06:25:18.015636 7f0268ff1700  1 ====== starting new request req=0x7f0268feb5b0 =====
+2018-10-18 06:25:18.016628 7f0268ff1700  1 policy condition check $Content-Type [application/octet-stream] application/octet-stream [application/octet-stream]
+2018-10-18 06:25:18.027502 7f0268ff1700  1 ====== req done req=0x7f0268feb5b0 op status=0 http_status=204 ======
+2018-10-18 06:25:18.027588 7f0268ff1700  1 civetweb: 0x7f02e4002e80: 127.0.0.1 - - [18/Oct/2018:06:25:18 +0000] "POST /eisoo HTTP/1.0" 1 0 http://192.168.136.196/ Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.100 Safari/537.36
+2018-10-18 06:25:18.065017 7f026effd700  1 ====== starting new request req=0x7f026eff75b0 =====
+2018-10-18 06:25:18.067566 7f026effd700  1 ====== req done req=0x7f026eff75b0 op status=0 http_status=200 ======
+2018-10-18 06:25:18.067660 7f026effd700  1 civetweb: 0x7f02dc002e80: 127.0.0.1 - - [18/Oct/2018:06:25:18 +0000] "HEAD /eisoo/badde6e3-5a6f-473c-b0d2-c1b1f6e31810/6606E4240A1F423597C4F56BA44E435B/04D63175DFD044EC858466B0322D03CE HTTP/1.0" 1 0 - -
+2018-10-18 06:25:18.183724 7f026c7f8700  1 ====== starting new request req=0x7f026c7f25b0 =====
+2018-10-18 06:25:18.184517 7f026c7f8700  1 policy condition check $Content-Type [application/octet-stream] application/octet-stream [application/octet-stream]
+2018-10-18 06:25:18.204644 7f026c7f8700  1 ====== req done req=0x7f026c7f25b0 op status=0 http_status=204 ======
+2018-10-18 06:25:18.204758 7f026c7f8700  1 civetweb: 0x7f02fc001f50: 127.0.0.1 - - [18/Oct/2018:06:25:18 +0000] "POST /eisoo HTTP/1.0" 1 0 http://192.168.136.196/ Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.100 Safari/537.36
+2018-10-18 06:25:18.236415 7f02687f0700  1 ====== starting new request req=0x7f02687ea5b0 =====
+2018-10-18 06:25:18.239533 7f02687f0700  1 ====== req done req=0x7f02687ea5b0 op status=0 http_status=200 ======
+2018-10-18 06:25:18.239640 7f02687f0700  1 civetweb: 0x7f02f4001460: 127.0.0.1 - - [18/Oct/2018:06:25:18 +0000] "HEAD /eisoo/badde6e3-5a6f-473c-b0d2-c1b1f6e31810/6606E4240A1F423597C4F56BA44E435B/AC6F3EFE42D643DF90AAC3664BB695E5 HTTP/1.0" 1 0 - -
+2018-10-18 06:25:18.340124 7f026e7fc700  1 ====== starting new request req=0x7f026e7f65b0 =====
+2018-10-18 06:25:18.340942 7f026e7fc700  1 policy condition check $Content-Type [application/octet-stream] application/octet-stream [application/octet-stream]
+2018-10-18 06:25:18.357906 7f026e7fc700  1 ====== req done req=0x7f026e7f65b0 op status=0 http_status=204 ======
+2018-10-18 06:25:18.358058 7f026e7fc700  1 civetweb: 0x7f02dc007400: 127.0.0.1 - - [18/Oct/2018:06:25:18 +0000] "POST /eisoo HTTP/1.0" 1 0 http://192.168.136.196/ Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.100 Safari/537.36
+2018-10-18 06:25:18.392394 7f026d7fa700  1 ====== starting new request req=0x7f026d7f45b0 =====
+2018-10-18 06:25:18.396022 7f026d7fa700  1 ====== req done req=0x7f026d7f45b0 op status=0 http_status=200 ======
+2018-10-18 06:25:18.396161 7f026d7fa700  1 civetweb: 0x7f02e800c340: 127.0.0.1 - - [18/Oct/2018:06:25:18 +0000] "HEAD /eisoo/badde6e3-5a6f-473c-b0d2-c1b1f6e31810/6606E4240A1F423597C4F56BA44E435B/A672FF80C3164E5E8A5B1632ECD857B9 HTTP/1.0" 1 0 - -
+2018-10-18 06:25:23.053510 7f026a7f4700  1 ====== starting new request req=0x7f026a7ee5b0 =====
+2018-10-18 06:25:23.057995 7f026a7f4700  1 ====== req done req=0x7f026a7ee5b0 op status=0 http_status=206 ======
+2018-10-18 06:25:23.058278 7f026a7f4700  1 civetweb: 0x7f03000009b0: 127.0.0.1 - - [18/Oct/2018:06:25:23 +0000] "GET /eisoo/badde6e3-5a6f-473c-b0d2-c1b1f6e31810/6606E4240A1F423597C4F56BA44E435B/ECD7B91C7CD94383AE1E32167E810791 HTTP/1.0" 1 0 - -
+2018-10-18 06:25:23.096974 7f02677ee700  1 ====== starting new request req=0x7f02677e85b0 =====
+2018-10-18 06:25:23.105077 7f02677ee700  1 ====== req done req=0x7f02677e85b0 op status=0 http_status=206 ======
+2018-10-18 06:25:23.105182 7f02677ee700  1 civetweb: 0x7f02e0004e40: 127.0.0.1 - - [18/Oct/2018:06:25:23 +0000] "GET /eisoo/badde6e3-5a6f-473c-b0d2-c1b1f6e31810/6606E4240A1F423597C4F56BA44E435B/28B91166EE3D4D899DFA281FB091B31D HTTP/1.0" 1 0 - -
+2018-10-18 06:25:23.166540 7f0267fef700  1 ====== starting new request req=0x7f0267fe95b0 =====
+2018-10-18 06:25:23.171359 7f0267fef700  1 ====== req done req=0x7f0267fe95b0 op status=0 http_status=206 ======
+2018-10-18 06:25:23.171454 7f0267fef700  1 civetweb: 0x7f02e4007400: 127.0.0.1 - - [18/Oct/2018:06:25:23 +0000] "GET /eisoo/badde6e3-5a6f-473c-b0d2-c1b1f6e31810/6606E4240A1F423597C4F56BA44E435B/B70EDE8C14F448DE95564F902C7C8195 HTTP/1.0" 1 0 - -
+2018-10-18 06:25:23.219024 7f026b7f6700  1 ====== starting new request req=0x7f026b7f05b0 =====
+2018-10-18 06:25:23.224535 7f026b7f6700  1 ====== req done req=0x7f026b7f05b0 op status=0 http_status=206 ======
+2018-10-18 06:25:23.224637 7f026b7f6700  1 civetweb: 0x7f02f40059e0: 127.0.0.1 - - [18/Oct/2018:06:25:23 +0000] "GET /eisoo/badde6e3-5a6f-473c-b0d2-c1b1f6e31810/6606E4240A1F423597C4F56BA44E435B/2B75EC1B7FB449C8A77BEF5BD6ADC363 HTTP/1.0" 1 0 - -
+2018-10-18 06:25:23.252574 7f026bff7700  1 ====== starting new request req=0x7f026bff15b0 =====
+2018-10-18 06:25:23.256928 7f026bff7700  1 ====== req done req=0x7f026bff15b0 op status=0 http_status=206 ======
+2018-10-18 06:25:23.257036 7f026bff7700  1 civetweb: 0x7f02f8018850: 127.0.0.1 - - [18/Oct/2018:06:25:23 +0000] "GET /eisoo/badde6e3-5a6f-473c-b0d2-c1b1f6e31810/6606E4240A1F423597C4F56BA44E435B/49D851BEA6544E2898DA874E904A0484 HTTP/1.0" 1 0 - -
+2018-10-18 06:25:23.390290 7f0269ff3700  1 ====== starting new request req=0x7f0269fed5b0 =====
+2018-10-18 06:25:23.394600 7f0269ff3700  1 ====== req done req=0x7f0269fed5b0 op status=0 http_status=206 ======
+2018-10-18 06:25:23.394741 7f0269ff3700  1 civetweb: 0x557e1c7ad3b0: 127.0.0.1 - - [18/Oct/2018:06:25:23 +0000] "GET /eisoo/badde6e3-5a6f-473c-b0d2-c1b1f6e31810/6606E4240A1F423597C4F56BA44E435B/F532AFE2CFEC4AC2B94A10E2D9AC5B08 HTTP/1.0" 1 0 - -
+2018-10-18 06:25:23.454222 7f026aff5700  1 ====== starting new request req=0x7f026afef5b0 =====
+2018-10-18 06:25:23.459182 7f026aff5700  1 ====== req done req=0x7f026afef5b0 op status=0 http_status=206 ======
+2018-10-18 06:25:23.459276 7f026aff5700  1 civetweb: 0x7f02fc0064d0: 127.0.0.1 - - [18/Oct/2018:06:25:23 +0000] "GET /eisoo/badde6e3-5a6f-473c-b0d2-c1b1f6e31810/6606E4240A1F423597C4F56BA44E435B/E756928B2D7A48B08A65C532E393F12B HTTP/1.0" 1 0 - -
+2018-10-18 06:25:23.495531 7f0266fed700  1 ====== starting new request req=0x7f0266fe75b0 =====
+2018-10-18 06:25:23.498268 7f0266fed700  1 ====== req done req=0x7f0266fe75b0 op status=0 http_status=206 ======
+2018-10-18 06:25:23.498368 7f0266fed700  1 civetweb: 0x7f02ec0009b0: 127.0.0.1 - - [18/Oct/2018:06:25:23 +0000] "GET /eisoo/badde6e3-5a6f-473c-b0d2-c1b1f6e31810/6606E4240A1F423597C4F56BA44E435B/2FC9A67586384E878E21743CEA4C5499 HTTP/1.0" 1 0 - -
+2018-10-18 06:25:23.537717 7f026dffb700  1 ====== starting new request req=0x7f026dff55b0 =====
+2018-10-18 06:25:23.543253 7f026dffb700  1 ====== req done req=0x7f026dff55b0 op status=0 http_status=206 ======
+2018-10-18 06:25:23.543346 7f026dffb700  1 civetweb: 0x7f027c002890: 127.0.0.1 - - [18/Oct/2018:06:25:23 +0000] "GET /eisoo/badde6e3-5a6f-473c-b0d2-c1b1f6e31810/6606E4240A1F423597C4F56BA44E435B/DABA4DAD72D342E3A3504661DF41367D HTTP/1.0" 1 0 - -
+2018-10-18 06:25:23.585738 7f02697f2700  1 ====== starting new request req=0x7f02697ec5b0 =====
+2018-10-18 06:25:23.588513 7f02697f2700  1 ====== req done req=0x7f02697ec5b0 op status=0 http_status=206 ======
+2018-10-18 06:25:23.588597 7f02697f2700  1 civetweb: 0x7f0270000ea0: 127.0.0.1 - - [18/Oct/2018:06:25:23 +0000] "GET /eisoo/badde6e3-5a6f-473c-b0d2-c1b1f6e31810/6606E4240A1F423597C4F56BA44E435B/04D63175DFD044EC858466B0322D03CE HTTP/1.0" 1 0 - -
+2018-10-18 06:25:23.642288 7f026cff9700  1 ====== starting new request req=0x7f026cff35b0 =====
+2018-10-18 06:25:23.648083 7f026cff9700  1 ====== req done req=0x7f026cff35b0 op status=0 http_status=206 ======
+2018-10-18 06:25:23.648169 7f026cff9700  1 civetweb: 0x7f0278000bd0: 127.0.0.1 - - [18/Oct/2018:06:25:23 +0000] "GET /eisoo/badde6e3-5a6f-473c-b0d2-c1b1f6e31810/6606E4240A1F423597C4F56BA44E435B/AC6F3EFE42D643DF90AAC3664BB695E5 HTTP/1.0" 1 0 - -
+2018-10-18 06:25:23.692099 7f02667ec700  1 ====== starting new request req=0x7f02667e65b0 =====
+2018-10-18 06:25:23.694948 7f02667ec700  1 ====== req done req=0x7f02667e65b0 op status=0 http_status=206 ======
+2018-10-18 06:25:23.695131 7f02667ec700  1 civetweb: 0x7f0288000ea0: 127.0.0.1 - - [18/Oct/2018:06:25:23 +0000] "GET /eisoo/badde6e3-5a6f-473c-b0d2-c1b1f6e31810/6606E4240A1F423597C4F56BA44E435B/A672FF80C3164E5E8A5B1632ECD857B9 HTTP/1.0" 1 0 - -

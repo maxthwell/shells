@@ -1,0 +1,10 @@
+2018-10-18 05:10:10  /entrypoint.sh: static: does not generate config
+HEALTH_ERR clock skew detected on mon.ceph-node2, mon.ceph-node3; 3 pgs are stuck inactive for more than 300 seconds; 96 pgs peering; 3 pgs stuck inactive; 3 requests are blocked > 32 sec; 1/3 in osds are down; Monitor clock skew detected 
+2018-10-18 05:10:18  /entrypoint.sh: INFO- It looks like /dev/sdd is an OSD, set OSD_FORCE_ZAP=1 to use this device anyway and zap its content
+2018-10-18 05:10:18  /entrypoint.sh: You can also use the zap_device scenario on the appropriate device to zap it
+2018-10-18 05:10:18  /entrypoint.sh: Moving on, trying to activate the OSD now.
+/dev/sdd2
+2018-10-18 05:10:21  /entrypoint.sh: SUCCESS
+exec: PID 21887: spawning /usr/bin/ceph-osd --cluster ceph -f -i 0 --setuser ceph --setgroup disk
+exec: Waiting 21887 to quit
+starting osd.0 at :/0 osd_data /var/lib/ceph/osd/ceph-0 /var/lib/ceph/osd/ceph-0/journal

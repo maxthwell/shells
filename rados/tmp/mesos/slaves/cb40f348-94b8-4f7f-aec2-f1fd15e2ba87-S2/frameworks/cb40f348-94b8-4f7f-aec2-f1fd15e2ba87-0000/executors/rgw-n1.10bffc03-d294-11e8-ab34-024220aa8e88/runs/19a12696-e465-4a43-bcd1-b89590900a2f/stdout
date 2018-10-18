@@ -1,0 +1,71 @@
+2018-10-18 05:10:10  /entrypoint.sh: static: does not generate config
+2018-10-18 05:10:10  /entrypoint.sh: SUCCESS
+exec: PID 164: spawning /usr/bin/radosgw --cluster ceph --setuser ceph --setgroup ceph -d -n client.rgw.ceph-node1 -k /var/lib/ceph/radosgw/ceph-rgw.ceph-node1/keyring
+exec: Waiting 164 to quit
+2018-10-18 05:10:10.835732 7f9a4e019a00  0 framework: fastcgi
+2018-10-18 05:10:10.835760 7f9a4e019a00  0 framework: civetweb
+2018-10-18 05:10:10.835778 7f9a4e019a00  0 framework conf key: port, val: 7480
+2018-10-18 05:10:10.836827 7f9a4e019a00  0 deferred set uid:gid to 167:167 (ceph:ceph)
+2018-10-18 05:10:10.836952 7f9a4e019a00  0 ceph version 10.2.3-426-gee91e06 (ee91e06d3f2176add959bd8b1b5bfb9fbdcda5a8), process radosgw, pid 164
+2018-10-18 05:10:10.888379 7f9a4e007700  0 -- :/3627008479 >> 192.168.136.187:6789/0 pipe(0x55e2e965dc20 sd=6 :0 s=1 pgs=0 cs=0 l=1 c=0x55e2e965eee0).fault
+2018-10-18 05:10:13.888446 7f9a30615700  0 -- :/3627008479 >> 192.168.136.187:6789/0 pipe(0x7f9a18000c80 sd=7 :0 s=1 pgs=0 cs=0 l=1 c=0x7f9a18001f90).fault
+2018-10-18 05:10:16.888894 7f9a4e007700  0 -- :/3627008479 >> 192.168.136.187:6789/0 pipe(0x7f9a180052b0 sd=7 :0 s=1 pgs=0 cs=0 l=1 c=0x7f9a18006570).fault
+2018-10-18 05:10:18.589075 7f9a4e019a00  0 starting handler: civetweb
+2018-10-18 05:10:18.597141 7f9a31617700  0 monclient: hunting for new mon
+2018-10-18 05:10:18.694069 7f9a4e019a00  0 WARNING: skipping unknown framework: fastcgi
+2018-10-18 05:24:00.883949 7f9998ff9700  1 ====== starting new request req=0x7f9998ff35b0 =====
+2018-10-18 05:24:00.947122 7f9998ff9700  0 NOTICE: request time skew too big now=2018-10-18 05:24:00.000000 req_time=2018-10-18 05:45:13.000000
+2018-10-18 05:24:00.947564 7f9998ff9700  1 ====== req done req=0x7f9998ff35b0 op status=0 http_status=403 ======
+2018-10-18 05:24:00.947675 7f9998ff9700  1 civetweb: 0x7f9a08003e80: 127.0.0.1 - - [18/Oct/2018:05:24:00 +0000] "PUT /eisoo/badde6e3-5a6f-473c-b0d2-c1b1f6e31810/connection-test/object HTTP/1.0" 1 0 - -
+2018-10-18 05:24:03.841004 7f99937fe700  1 ====== starting new request req=0x7f99937f85b0 =====
+2018-10-18 05:24:03.841351 7f99937fe700  0 NOTICE: request time skew too big now=2018-10-18 05:24:03.000000 req_time=2018-10-18 05:45:16.000000
+2018-10-18 05:24:03.841547 7f99937fe700  1 ====== req done req=0x7f99937f85b0 op status=0 http_status=403 ======
+2018-10-18 05:24:03.841636 7f99937fe700  1 civetweb: 0x7f9a1c0013f0: 127.0.0.1 - - [18/Oct/2018:05:24:03 +0000] "PUT /eisoo/badde6e3-5a6f-473c-b0d2-c1b1f6e31810/connection-test/object HTTP/1.0" 1 0 - -
+2018-10-18 05:24:52.101627 7f9993fff700  1 ====== starting new request req=0x7f9993ff95b0 =====
+2018-10-18 05:24:52.102059 7f9993fff700  0 NOTICE: request time skew too big now=2018-10-18 05:24:52.000000 req_time=2018-10-18 05:46:04.000000
+2018-10-18 05:24:52.102290 7f9993fff700  1 ====== req done req=0x7f9993ff95b0 op status=0 http_status=403 ======
+2018-10-18 05:24:52.102385 7f9993fff700  1 civetweb: 0x7f9a200043c0: 127.0.0.1 - - [18/Oct/2018:05:24:52 +0000] "PUT /eisoo/badde6e3-5a6f-473c-b0d2-c1b1f6e31810/connection-test/object HTTP/1.0" 1 0 - -
+2018-10-18 05:24:58.445622 7f9992ffd700  1 ====== starting new request req=0x7f9992ff75b0 =====
+2018-10-18 05:24:58.445972 7f9992ffd700  0 NOTICE: request time skew too big now=2018-10-18 05:24:58.000000 req_time=2018-10-18 05:46:11.000000
+2018-10-18 05:24:58.446209 7f9992ffd700  1 ====== req done req=0x7f9992ff75b0 op status=0 http_status=403 ======
+2018-10-18 05:24:58.446312 7f9992ffd700  1 civetweb: 0x7f9a0c00a520: 127.0.0.1 - - [18/Oct/2018:05:24:58 +0000] "PUT /eisoo/badde6e3-5a6f-473c-b0d2-c1b1f6e31810/connection-test/object HTTP/1.0" 1 0 - -
+2018-10-18 05:25:52.793085 7f9991ffb700  1 ====== starting new request req=0x7f9991ff55b0 =====
+2018-10-18 05:25:52.793384 7f9991ffb700  0 NOTICE: request time skew too big now=2018-10-18 05:25:52.000000 req_time=2018-10-18 05:47:05.000000
+2018-10-18 05:25:52.793623 7f9991ffb700  1 ====== req done req=0x7f9991ff55b0 op status=0 http_status=403 ======
+2018-10-18 05:25:52.793721 7f9991ffb700  1 civetweb: 0x7f9a08008400: 127.0.0.1 - - [18/Oct/2018:05:25:52 +0000] "PUT /eisoo/badde6e3-5a6f-473c-b0d2-c1b1f6e31810/connection-test/object HTTP/1.0" 1 0 - -
+2018-10-18 05:28:31.216663 7f99927fc700  1 ====== starting new request req=0x7f99927f65b0 =====
+2018-10-18 05:28:31.222541 7f99927fc700  1 ====== req done req=0x7f99927f65b0 op status=0 http_status=204 ======
+2018-10-18 05:28:31.222851 7f99927fc700  1 civetweb: 0x7f9a0c00eaa0: 127.0.0.1 - - [18/Oct/2018:05:28:31 +0000] "GET /auth HTTP/1.0" 1 0 - python-requests/2.6.0 CPython/2.7.5 Linux/3.10.0-693.el7.x86_64
+2018-10-18 05:28:31.227409 7f99917fa700  1 ====== starting new request req=0x7f99917f45b0 =====
+2018-10-18 05:28:31.229879 7f99917fa700  0 NOTICE: request time skew too big now=2018-10-18 05:28:31.000000 req_time=2018-10-18 05:47:52.000000
+2018-10-18 05:28:31.230167 7f99917fa700  1 ====== req done req=0x7f99917f45b0 op status=0 http_status=403 ======
+2018-10-18 05:28:31.230260 7f99917fa700  1 civetweb: 0x7f9a140009b0: 127.0.0.1 - - [18/Oct/2018:05:28:31 +0000] "PUT /eisoo/ HTTP/1.0" 1 0 - Boto/2.49.0 Python/2.7.5 Linux/3.10.0-693.el7.x86_64
+2018-10-18 05:29:38.047999 7f9990ff9700  1 ====== starting new request req=0x7f9990ff35b0 =====
+2018-10-18 05:29:38.048366 7f9990ff9700  0 NOTICE: request time skew too big now=2018-10-18 05:29:38.000000 req_time=2018-10-18 05:50:50.000000
+2018-10-18 05:29:38.048783 7f9990ff9700  1 ====== req done req=0x7f9990ff35b0 op status=0 http_status=403 ======
+2018-10-18 05:29:38.048869 7f9990ff9700  1 civetweb: 0x7f9a1001ce90: 127.0.0.1 - - [18/Oct/2018:05:29:38 +0000] "PUT /eisoo/badde6e3-5a6f-473c-b0d2-c1b1f6e31810/connection-test/object HTTP/1.0" 1 0 - -
+2018-10-18 05:30:06.821402 7f99907f8700  1 ====== starting new request req=0x7f99907f25b0 =====
+2018-10-18 05:30:06.821718 7f99907f8700  0 NOTICE: request time skew too big now=2018-10-18 05:30:06.000000 req_time=2018-10-18 05:51:19.000000
+2018-10-18 05:30:06.821983 7f99907f8700  1 ====== req done req=0x7f99907f25b0 op status=0 http_status=403 ======
+2018-10-18 05:30:06.822072 7f99907f8700  1 civetweb: 0x7f9a1c005970: 127.0.0.1 - - [18/Oct/2018:05:30:06 +0000] "PUT /eisoo/badde6e3-5a6f-473c-b0d2-c1b1f6e31810/connection-test/object HTTP/1.0" 1 0 - -
+2018-10-18 05:30:15.296619 7f998fff7700  1 ====== starting new request req=0x7f998fff15b0 =====
+2018-10-18 05:30:15.297003 7f998fff7700  0 NOTICE: request time skew too big now=2018-10-18 05:30:15.000000 req_time=2018-10-18 05:51:28.000000
+2018-10-18 05:30:15.297208 7f998fff7700  1 ====== req done req=0x7f998fff15b0 op status=0 http_status=403 ======
+2018-10-18 05:30:15.297302 7f998fff7700  1 civetweb: 0x7f9a20008940: 127.0.0.1 - - [18/Oct/2018:05:30:15 +0000] "PUT /eisoo/badde6e3-5a6f-473c-b0d2-c1b1f6e31810/connection-test/object HTTP/1.0" 1 0 - -
+2018-10-18 05:32:22.349662 7f998eff5700  1 ====== starting new request req=0x7f998efef5b0 =====
+2018-10-18 05:32:22.350298 7f998eff5700  1 ====== req done req=0x7f998efef5b0 op status=0 http_status=204 ======
+2018-10-18 05:32:22.350700 7f998eff5700  1 civetweb: 0x7f9a240009b0: 192.168.136.188 - - [18/Oct/2018:05:32:22 +0000] "GET /auth HTTP/1.1" 1 0 - python-requests/2.6.0 CPython/2.7.5 Linux/3.10.0-693.el7.x86_64
+2018-10-18 05:32:22.355811 7f998f7f6700  1 ====== starting new request req=0x7f998f7f05b0 =====
+2018-10-18 05:32:22.356202 7f998f7f6700  0 NOTICE: request time skew too big now=2018-10-18 05:32:22.000000 req_time=2018-10-18 05:51:43.000000
+2018-10-18 05:32:22.356395 7f998f7f6700  1 ====== req done req=0x7f998f7f05b0 op status=0 http_status=403 ======
+2018-10-18 05:32:22.356481 7f998f7f6700  1 civetweb: 0x7f9a2c000b50: 192.168.136.188 - - [18/Oct/2018:05:32:22 +0000] "PUT /eisoo/ HTTP/1.1" 1 0 - Boto/2.49.0 Python/2.7.5 Linux/3.10.0-693.el7.x86_64
+teardown: managing teardown after SIGTERM
+teardown: Sending SIGTERM to PID 164
+teardown: Waiting PID 164 to terminate .2018-10-18 05:34:27.277395 7f9999ffb700  1 handle_sigterm
+2018-10-18 05:34:27.277452 7f9999ffb700  1 handle_sigterm set alarm for 120
+2018-10-18 05:34:27.277474 7f9a4e019a00 -1 shutting down
+2018-10-18 05:34:27.345615 7f99d5ffb700  0 ERROR: failed to clone shard, completion_mgr.get_next() returned ret=-125
+.2018-10-18 05:34:27.436690 7f9a4e019a00  1 final shutdown
+
+teardown: Process 164 is terminated
+teardown: Bye Bye, container will die with return code 0

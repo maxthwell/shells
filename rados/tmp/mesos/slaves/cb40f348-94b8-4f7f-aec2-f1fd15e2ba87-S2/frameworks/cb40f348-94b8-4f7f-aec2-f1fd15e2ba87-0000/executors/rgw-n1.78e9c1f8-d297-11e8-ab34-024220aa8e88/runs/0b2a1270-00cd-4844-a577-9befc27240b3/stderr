@@ -1,0 +1,6 @@
+I1018 05:34:24.956341 23282 exec.cpp:162] Version: 1.7.0
+I1018 05:34:24.962976 23290 exec.cpp:236] Executor registered on agent cb40f348-94b8-4f7f-aec2-f1fd15e2ba87-S2
+I1018 05:34:24.963873 23287 executor.cpp:130] Registered docker executor on ceph-node1
+I1018 05:34:24.964378 23290 executor.cpp:186] Starting task rgw-n1.78e9c1f8-d297-11e8-ab34-024220aa8e88
+I1018 05:34:27.355721 23288 executor.cpp:736] Container exited with status 255
+I1018 05:34:28.429471 23291 process.cpp:926] Stopped the socket accept loop

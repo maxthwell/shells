@@ -1,0 +1,44 @@
+I1018 05:10:06.936336 20553 exec.cpp:162] Version: 1.7.0
+I1018 05:10:07.226610 20630 exec.cpp:236] Executor registered on agent cb40f348-94b8-4f7f-aec2-f1fd15e2ba87-S2
+I1018 05:10:07.228452 20630 executor.cpp:130] Registered docker executor on ceph-node1
+I1018 05:10:07.228592 20630 executor.cpp:186] Starting task osd-n1-sdd.10bf11a2-d294-11e8-ab34-024220aa8e88
+2018-10-18 05:10:11.131574 7f12c0337700  0 -- :/3413282621 >> 192.168.136.187:6789/0 pipe(0x7f12bc05c490 sd=4 :0 s=1 pgs=0 cs=0 l=1 c=0x7f12bc05f550).fault
+2018-10-18 05:10:14.199859 7f12c0236700  0 -- :/3413282621 >> 192.168.136.187:6789/0 pipe(0x7f12b0000c80 sd=4 :0 s=1 pgs=0 cs=0 l=1 c=0x7f12b0001f90).fault
+2018-10-18 05:10:17.184341 7f12c0337700  0 -- :/3413282621 >> 192.168.136.187:6789/0 pipe(0x7f12b00052a0 sd=5 :0 s=1 pgs=0 cs=0 l=1 c=0x7f12b0006560).fault
+main_activate: path = /dev/sdd1
+get_dm_uuid: get_dm_uuid /dev/sdd1 uuid path is /sys/dev/block/8:49/dm/uuid
+command: Running command: /usr/sbin/blkid -o udev -p /dev/sdd1
+command: Running command: /sbin/blkid -p -s TYPE -o value -- /dev/sdd1
+command: Running command: /usr/bin/ceph-conf --cluster=ceph --name=osd. --lookup osd_mount_options_xfs
+command: Running command: /usr/bin/ceph-conf --cluster=ceph --name=osd. --lookup osd_fs_mount_options_xfs
+mount: Mounting /dev/sdd1 on /var/lib/ceph/tmp/mnt.dBWCoY with options noatime,inode64
+command_check_call: Running command: /usr/bin/mount -t xfs -o noatime,inode64 -- /dev/sdd1 /var/lib/ceph/tmp/mnt.dBWCoY
+activate: Cluster uuid is 0c845bdd-bbad-4a3e-95d0-fd414660b87c
+command: Running command: /usr/bin/ceph-osd --cluster=ceph --show-config-value=fsid
+activate: Cluster name is ceph
+activate: OSD uuid is b4ef1e85-e7e9-42fd-8c7b-547252b7a636
+activate: OSD id is 0
+command: Running command: /usr/bin/ceph-conf --cluster=ceph --name=osd. --lookup init
+command: Running command: /usr/bin/ceph-detect-init --default sysvinit
+activate: Marking with init system systemd
+activate: ceph osd.0 data dir is ready at /var/lib/ceph/tmp/mnt.dBWCoY
+move_mount: Moving mount to final location...
+command_check_call: Running command: /bin/mount -o noatime,inode64 -- /dev/sdd1 /var/lib/ceph/osd/ceph-0
+command_check_call: Running command: /bin/umount -l -- /var/lib/ceph/tmp/mnt.dBWCoY
+2018-10-18 05:10:22.415632 7f1c7814d880 -1 osd.0 133 log_to_monitors {default=true}
+2018-10-18 06:22:34.001570 7f1c6df69700 -1 osd.0 163 heartbeat_check: no reply from osd.1 since back 2018-10-18 06:01:09.581260 front 2018-10-18 06:01:09.581260 (cutoff 2018-10-18 06:22:14.001566)
+2018-10-18 06:22:34.001587 7f1c6df69700 -1 osd.0 163 heartbeat_check: no reply from osd.2 since back 2018-10-18 06:01:09.581260 front 2018-10-18 06:01:09.581260 (cutoff 2018-10-18 06:22:14.001566)
+2018-10-18 06:22:34.001593 7f1c6df69700 -1 osd.0 163 heartbeat_check: no reply from osd.3 since back 2018-10-18 06:01:09.581260 front 2018-10-18 06:01:09.581260 (cutoff 2018-10-18 06:22:14.001566)
+2018-10-18 06:22:34.001602 7f1c6df69700 -1 osd.0 163 heartbeat_check: no reply from osd.4 since back 2018-10-18 06:01:09.581260 front 2018-10-18 06:01:09.581260 (cutoff 2018-10-18 06:22:14.001566)
+2018-10-18 06:22:34.001607 7f1c6df69700 -1 osd.0 163 heartbeat_check: no reply from osd.5 since back 2018-10-18 06:01:09.581260 front 2018-10-18 06:01:09.581260 (cutoff 2018-10-18 06:22:14.001566)
+2018-10-18 06:22:34.006297 7f1c545d6700 -1 osd.0 163 heartbeat_check: no reply from osd.1 since back 2018-10-18 06:01:09.581260 front 2018-10-18 06:01:09.581260 (cutoff 2018-10-18 06:22:14.006296)
+2018-10-18 06:22:34.006304 7f1c545d6700 -1 osd.0 163 heartbeat_check: no reply from osd.2 since back 2018-10-18 06:01:09.581260 front 2018-10-18 06:01:09.581260 (cutoff 2018-10-18 06:22:14.006296)
+2018-10-18 06:22:34.006309 7f1c545d6700 -1 osd.0 163 heartbeat_check: no reply from osd.3 since back 2018-10-18 06:01:09.581260 front 2018-10-18 06:01:09.581260 (cutoff 2018-10-18 06:22:14.006296)
+2018-10-18 06:22:34.006314 7f1c545d6700 -1 osd.0 163 heartbeat_check: no reply from osd.4 since back 2018-10-18 06:01:09.581260 front 2018-10-18 06:01:09.581260 (cutoff 2018-10-18 06:22:14.006296)
+2018-10-18 06:22:34.006320 7f1c545d6700 -1 osd.0 163 heartbeat_check: no reply from osd.5 since back 2018-10-18 06:01:09.581260 front 2018-10-18 06:01:09.581260 (cutoff 2018-10-18 06:22:14.006296)
+2018-10-18 06:22:35.001845 7f1c6df69700 -1 osd.0 164 heartbeat_check: no reply from osd.3 since back 2018-10-18 06:01:09.581260 front 2018-10-18 06:01:09.581260 (cutoff 2018-10-18 06:22:15.001839)
+2018-10-18 06:22:36.002107 7f1c6df69700 -1 osd.0 165 heartbeat_check: no reply from osd.3 since back 2018-10-18 06:01:09.581260 front 2018-10-18 06:01:09.581260 (cutoff 2018-10-18 06:22:16.002084)
+2018-10-18 06:22:37.003326 7f1c6df69700 -1 osd.0 166 heartbeat_check: no reply from osd.3 since back 2018-10-18 06:01:09.581260 front 2018-10-18 06:01:09.581260 (cutoff 2018-10-18 06:22:17.003320)
+2018-10-18 06:22:38.003758 7f1c6df69700 -1 osd.0 167 heartbeat_check: no reply from osd.3 since back 2018-10-18 06:01:09.581260 front 2018-10-18 06:01:09.581260 (cutoff 2018-10-18 06:22:18.003753)
+2018-10-18 06:22:39.003954 7f1c6df69700 -1 osd.0 168 heartbeat_check: no reply from osd.3 since back 2018-10-18 06:01:09.581260 front 2018-10-18 06:01:09.581260 (cutoff 2018-10-18 06:22:19.003944)
+2018-10-18 06:22:39.909150 7f1c545d6700 -1 osd.0 168 heartbeat_check: no reply from osd.3 since back 2018-10-18 06:01:09.581260 front 2018-10-18 06:01:09.581260 (cutoff 2018-10-18 06:22:19.909147)

@@ -1,0 +1,13 @@
+2018-10-18 05:34:26  /entrypoint.sh: static: does not generate config
+2018-10-18 05:34:26  /entrypoint.sh: SUCCESS
+exec: PID 168: spawning /usr/bin/radosgw --cluster ceph --setuser ceph --setgroup ceph -d -n client.rgw.ceph-node1 -k /var/lib/ceph/radosgw/ceph-rgw.ceph-node1/keyring
+exec: Waiting 168 to quit
+2018-10-18 05:34:26.656398 7f8a02eaea00  0 deferred set uid:gid to 167:167 (ceph:ceph)
+2018-10-18 05:34:26.656773 7f8a02eaea00  0 ceph version 10.2.3-426-gee91e06 (ee91e06d3f2176add959bd8b1b5bfb9fbdcda5a8), process radosgw, pid 168
+2018-10-18 05:34:26.991568 7f8a02eaea00  0 starting handler: civetweb
+2018-10-18 05:34:26.991714 7f8a02eaea00  0 civetweb: 0x562d7f262f80: cannot bind to 7480: 98 (Address already in use)
+2018-10-18 05:34:26.991756 7f8a02eaea00 -1 ERROR: failed run
+teardown: managing teardown after SIGCHLD
+teardown: Waiting PID 168 to terminate 
+teardown: Process 168 is terminated
+teardown: Bye Bye, container will die with return code -1

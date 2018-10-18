@@ -1,0 +1,167 @@
+2018-10-18 05:34:31  /entrypoint.sh: static: does not generate config
+2018-10-18 05:34:31  /entrypoint.sh: SUCCESS
+exec: PID 168: spawning /usr/bin/radosgw --cluster ceph --setuser ceph --setgroup ceph -d -n client.rgw.ceph-node1 -k /var/lib/ceph/radosgw/ceph-rgw.ceph-node1/keyring
+exec: Waiting 168 to quit
+2018-10-18 05:34:31.710199 7f3e8cb58a00  0 deferred set uid:gid to 167:167 (ceph:ceph)
+2018-10-18 05:34:31.716458 7f3e8cb58a00  0 ceph version 10.2.3-426-gee91e06 (ee91e06d3f2176add959bd8b1b5bfb9fbdcda5a8), process radosgw, pid 168
+2018-10-18 05:34:32.022397 7f3e8cb58a00  0 starting handler: civetweb
+2018-10-18 05:34:32.024037 7f3e6bfff700  0 monclient: hunting for new mon
+2018-10-18 05:34:32.066533 7f3e8cb58a00  0 WARNING: skipping unknown framework: fastcgi
+2018-10-18 05:34:32.222041 7f3e56ffd700  0 RGWGC::process() failed to acquire lock on gc.22
+2018-10-18 05:34:32.268566 7f3e0affd700  0 RGWLC::process() failed to acquire lock on, sleep 5, try againlc.3
+2018-10-18 05:34:37.272151 7f3e0affd700  0 RGWLC::process() failed to acquire lock on, sleep 5, try againlc.3
+2018-10-18 05:34:40.752548 7f3dd7fff700  1 ====== starting new request req=0x7f3dd7ff95b0 =====
+2018-10-18 05:34:40.761682 7f3dd7fff700  1 ====== req done req=0x7f3dd7ff95b0 op status=0 http_status=204 ======
+2018-10-18 05:34:40.761769 7f3dd7fff700  1 civetweb: 0x7f3e38003e80: 192.168.136.188 - - [18/Oct/2018:05:34:40 +0000] "GET /auth HTTP/1.1" 1 0 - python-requests/2.6.0 CPython/2.7.5 Linux/3.10.0-693.el7.x86_64
+2018-10-18 05:34:40.766271 7f3dd77fe700  1 ====== starting new request req=0x7f3dd77f85b0 =====
+2018-10-18 05:34:40.781868 7f3dd77fe700  0 NOTICE: request time skew too big now=2018-10-18 05:34:40.000000 req_time=2018-10-18 05:54:01.000000
+2018-10-18 05:34:40.782261 7f3dd77fe700  1 ====== req done req=0x7f3dd77f85b0 op status=0 http_status=403 ======
+2018-10-18 05:34:40.782406 7f3dd77fe700  1 civetweb: 0x7f3e30003d80: 192.168.136.188 - - [18/Oct/2018:05:34:40 +0000] "PUT /eisoo/ HTTP/1.1" 1 0 - Boto/2.49.0 Python/2.7.5 Linux/3.10.0-693.el7.x86_64
+2018-10-18 05:34:42.274375 7f3e0affd700  0 RGWLC::process() failed to acquire lock on, sleep 5, try againlc.3
+2018-10-18 05:34:42.829098 7f3dd67fc700  1 ====== starting new request req=0x7f3dd67f65b0 =====
+2018-10-18 05:34:42.831378 7f3dd67fc700  1 ====== req done req=0x7f3dd67f65b0 op status=0 http_status=204 ======
+2018-10-18 05:34:42.831454 7f3dd67fc700  1 civetweb: 0x7f3e48002e80: 192.168.136.188 - - [18/Oct/2018:05:34:42 +0000] "GET /auth HTTP/1.1" 1 0 - python-requests/2.6.0 CPython/2.7.5 Linux/3.10.0-693.el7.x86_64
+2018-10-18 05:34:42.835741 7f3dd6ffd700  1 ====== starting new request req=0x7f3dd6ff75b0 =====
+2018-10-18 05:34:42.836109 7f3dd6ffd700  0 NOTICE: request time skew too big now=2018-10-18 05:34:42.000000 req_time=2018-10-18 05:54:03.000000
+2018-10-18 05:34:42.836302 7f3dd6ffd700  1 ====== req done req=0x7f3dd6ff75b0 op status=0 http_status=403 ======
+2018-10-18 05:34:42.836388 7f3dd6ffd700  1 civetweb: 0x7f3e44004140: 192.168.136.188 - - [18/Oct/2018:05:34:42 +0000] "PUT /eisoo/ HTTP/1.1" 1 0 - Boto/2.49.0 Python/2.7.5 Linux/3.10.0-693.el7.x86_64
+2018-10-18 05:34:47.276312 7f3e0affd700  0 RGWLC::process() failed to acquire lock on, sleep 5, try againlc.3
+2018-10-18 05:34:52.277807 7f3e0affd700  0 RGWLC::process() failed to acquire lock on, sleep 5, try againlc.3
+2018-10-18 05:34:57.282557 7f3e0affd700  0 RGWLC::process() failed to acquire lock on, sleep 5, try againlc.3
+2018-10-18 05:35:02.284494 7f3e0affd700  0 RGWLC::process() failed to acquire lock on, sleep 5, try againlc.3
+2018-10-18 05:35:07.286245 7f3e0affd700  0 RGWLC::process() failed to acquire lock on, sleep 5, try againlc.3
+2018-10-18 05:35:12.288429 7f3e0affd700  0 RGWLC::process() failed to acquire lock on, sleep 5, try againlc.3
+2018-10-18 05:35:17.290544 7f3e0affd700  0 RGWLC::process() failed to acquire lock on, sleep 5, try againlc.3
+2018-10-18 05:35:22.294080 7f3e0affd700  0 RGWLC::process() failed to acquire lock on, sleep 5, try againlc.3
+2018-10-18 05:36:31.661608 7f3dd5ffb700  1 ====== starting new request req=0x7f3dd5ff55b0 =====
+2018-10-18 05:36:31.662298 7f3dd5ffb700  1 ====== req done req=0x7f3dd5ff55b0 op status=0 http_status=204 ======
+2018-10-18 05:36:31.662379 7f3dd5ffb700  1 civetweb: 0x7f3e38008400: 192.168.136.188 - - [18/Oct/2018:05:36:31 +0000] "GET /auth HTTP/1.1" 1 0 - python-requests/2.6.0 CPython/2.7.5 Linux/3.10.0-693.el7.x86_64
+2018-10-18 05:36:31.665750 7f3dd4ff9700  1 ====== starting new request req=0x7f3dd4ff35b0 =====
+2018-10-18 05:36:31.666042 7f3dd4ff9700  0 NOTICE: request time skew too big now=2018-10-18 05:36:31.000000 req_time=2018-10-18 05:55:52.000000
+2018-10-18 05:36:31.666191 7f3dd4ff9700  1 ====== req done req=0x7f3dd4ff35b0 op status=0 http_status=403 ======
+2018-10-18 05:36:31.666305 7f3dd4ff9700  1 civetweb: 0x7f3e440086c0: 192.168.136.188 - - [18/Oct/2018:05:36:31 +0000] "PUT /eisoo/ HTTP/1.1" 1 0 - Boto/2.49.0 Python/2.7.5 Linux/3.10.0-693.el7.x86_64
+2018-10-18 05:37:18.045639 7f3dcffff700  1 ====== starting new request req=0x7f3dcfff95b0 =====
+2018-10-18 05:37:18.046260 7f3dcffff700  1 ====== req done req=0x7f3dcfff95b0 op status=0 http_status=204 ======
+2018-10-18 05:37:18.046339 7f3dcffff700  1 civetweb: 0x7f3e500009b0: 192.168.136.188 - - [18/Oct/2018:05:37:18 +0000] "GET /auth HTTP/1.1" 1 0 - python-requests/2.6.0 CPython/2.7.5 Linux/3.10.0-693.el7.x86_64
+2018-10-18 05:37:18.049673 7f3dcf7fe700  1 ====== starting new request req=0x7f3dcf7f85b0 =====
+2018-10-18 05:37:18.056615 7f3dcf7fe700  1 ====== req done req=0x7f3dcf7f85b0 op status=0 http_status=200 ======
+2018-10-18 05:37:18.056722 7f3dcf7fe700  1 civetweb: 0x7f3e58001690: 192.168.136.188 - - [18/Oct/2018:05:37:18 +0000] "GET /swift/v1 HTTP/1.1" 1 0 - python-requests/2.6.0 CPython/2.7.5 Linux/3.10.0-693.el7.x86_64
+2018-10-18 05:37:18.065446 7f3dceffd700  1 ====== starting new request req=0x7f3dceff75b0 =====
+2018-10-18 05:37:18.073147 7f3dceffd700  1 ====== req done req=0x7f3dceff75b0 op status=0 http_status=200 ======
+2018-10-18 05:37:18.073234 7f3dceffd700  1 civetweb: 0x7f3e60001f50: 192.168.136.188 - - [18/Oct/2018:05:37:18 +0000] "GET /swift/v1/eisoo HTTP/1.1" 1 0 - python-requests/2.6.0 CPython/2.7.5 Linux/3.10.0-693.el7.x86_64
+2018-10-18 05:37:18.077866 7f3dd57fa700  1 ====== starting new request req=0x7f3dd57f45b0 =====
+2018-10-18 05:37:18.083143 7f3dd57fa700  1 ====== req done req=0x7f3dd57f45b0 op status=0 http_status=200 ======
+2018-10-18 05:37:18.083281 7f3dd57fa700  1 civetweb: 0x7f3e5c01bea0: 192.168.136.188 - - [18/Oct/2018:05:37:18 +0000] "GET /swift/v1/eisoo/badde6e3-5a6f-473c-b0d2-c1b1f6e31810/connection-test/object HTTP/1.1" 1 0 - python-requests/2.6.0 CPython/2.7.5 Linux/3.10.0-693.el7.x86_64
+2018-10-18 05:37:18.090122 7f3dce7fc700  1 ====== starting new request req=0x7f3dce7f65b0 =====
+2018-10-18 05:37:18.221427 7f3dce7fc700  1 ====== req done req=0x7f3dce7f65b0 op status=1900 http_status=201 ======
+2018-10-18 05:37:18.221529 7f3dce7fc700  1 civetweb: 0x7f3e640009b0: 192.168.136.188 - - [18/Oct/2018:05:37:18 +0000] "PUT /swift/v1/abc HTTP/1.1" 1 0 - python-requests/2.6.0 CPython/2.7.5 Linux/3.10.0-693.el7.x86_64
+2018-10-18 05:37:18.225340 7f3dcdffb700  1 ====== starting new request req=0x7f3dcdff55b0 =====
+2018-10-18 05:37:18.264291 7f3dcdffb700  1 ====== req done req=0x7f3dcdff55b0 op status=1900 http_status=201 ======
+2018-10-18 05:37:18.264414 7f3dcdffb700  1 civetweb: 0x7f3e6c000b50: 192.168.136.188 - - [18/Oct/2018:05:37:18 +0000] "PUT /swift/v1/abc/def HTTP/1.1" 1 0 - python-requests/2.6.0 CPython/2.7.5 Linux/3.10.0-693.el7.x86_64
+2018-10-18 05:37:18.272695 7f3dcd7fa700  1 ====== starting new request req=0x7f3dcd7f45b0 =====
+2018-10-18 05:37:18.315769 7f3dcd7fa700  1 ====== req done req=0x7f3dcd7f45b0 op status=1900 http_status=201 ======
+2018-10-18 05:37:18.315948 7f3dcd7fa700  1 civetweb: 0x55b19a721cd0: 192.168.136.188 - - [18/Oct/2018:05:37:18 +0000] "PUT /swift/v1/abc/def/a HTTP/1.1" 1 0 - python-requests/2.6.0 CPython/2.7.5 Linux/3.10.0-693.el7.x86_64
+2018-10-18 05:37:18.332792 7f3dcc7f8700  1 ====== starting new request req=0x7f3dcc7f25b0 =====
+2018-10-18 05:37:18.333810 7f3dcc7f8700  0 NOTICE: request time skew too big now=2018-10-18 05:37:18.000000 req_time=2018-10-18 05:56:39.000000
+2018-10-18 05:37:18.334009 7f3dcc7f8700  1 ====== req done req=0x7f3dcc7f25b0 op status=0 http_status=403 ======
+2018-10-18 05:37:18.334085 7f3dcc7f8700  1 civetweb: 0x7f3dd0000ea0: 192.168.136.188 - - [18/Oct/2018:05:37:18 +0000] "PUT /eisoo/ HTTP/1.1" 1 0 - Boto/2.49.0 Python/2.7.5 Linux/3.10.0-693.el7.x86_64
+2018-10-18 05:37:48.547600 7f3dcbff7700  1 ====== starting new request req=0x7f3dcbff15b0 =====
+2018-10-18 05:37:48.548291 7f3dcbff7700  1 ====== req done req=0x7f3dcbff15b0 op status=0 http_status=204 ======
+2018-10-18 05:37:48.548387 7f3dcbff7700  1 civetweb: 0x7f3ddc003860: 192.168.136.188 - - [18/Oct/2018:05:37:48 +0000] "GET /auth HTTP/1.1" 1 0 - python-requests/2.6.0 CPython/2.7.5 Linux/3.10.0-693.el7.x86_64
+2018-10-18 05:37:48.552568 7f3dcaff5700  1 ====== starting new request req=0x7f3dcafef5b0 =====
+2018-10-18 05:37:48.563324 7f3dcaff5700  1 ====== req done req=0x7f3dcafef5b0 op status=0 http_status=200 ======
+2018-10-18 05:37:48.563723 7f3dcaff5700  1 civetweb: 0x7f3de4000ea0: 192.168.136.188 - - [18/Oct/2018:05:37:48 +0000] "GET /swift/v1 HTTP/1.1" 1 0 - python-requests/2.6.0 CPython/2.7.5 Linux/3.10.0-693.el7.x86_64
+2018-10-18 05:37:48.566482 7f3dcb7f6700  1 ====== starting new request req=0x7f3dcb7f05b0 =====
+2018-10-18 05:37:48.574784 7f3dcb7f6700  1 ====== req done req=0x7f3dcb7f05b0 op status=0 http_status=200 ======
+2018-10-18 05:37:48.574885 7f3dcb7f6700  1 civetweb: 0x7f3dd8000ea0: 192.168.136.188 - - [18/Oct/2018:05:37:48 +0000] "GET /swift/v1/abc HTTP/1.1" 1 0 - python-requests/2.6.0 CPython/2.7.5 Linux/3.10.0-693.el7.x86_64
+2018-10-18 05:37:48.578220 7f3dca7f4700  1 ====== starting new request req=0x7f3dca7ee5b0 =====
+2018-10-18 05:37:48.582326 7f3dca7f4700  1 ====== req done req=0x7f3dca7ee5b0 op status=0 http_status=200 ======
+2018-10-18 05:37:48.582517 7f3dca7f4700  1 civetweb: 0x7f3de0000ea0: 192.168.136.188 - - [18/Oct/2018:05:37:48 +0000] "GET /swift/v1/abc/def HTTP/1.1" 1 0 - python-requests/2.6.0 CPython/2.7.5 Linux/3.10.0-693.el7.x86_64
+2018-10-18 05:37:48.586352 7f3dc97f2700  1 ====== starting new request req=0x7f3dc97ec5b0 =====
+2018-10-18 05:37:48.590050 7f3dc97f2700  1 ====== req done req=0x7f3dc97ec5b0 op status=0 http_status=200 ======
+2018-10-18 05:37:48.590138 7f3dc97f2700  1 civetweb: 0x7f3dec000ea0: 192.168.136.188 - - [18/Oct/2018:05:37:48 +0000] "GET /swift/v1/abc/def/a HTTP/1.1" 1 0 - python-requests/2.6.0 CPython/2.7.5 Linux/3.10.0-693.el7.x86_64
+2018-10-18 05:37:48.671799 7f3dccff9700  1 ====== starting new request req=0x7f3dccff35b0 =====
+2018-10-18 05:37:48.680167 7f3dccff9700  1 ====== req done req=0x7f3dccff35b0 op status=0 http_status=200 ======
+2018-10-18 05:37:48.680337 7f3dccff9700  1 civetweb: 0x7f3df0000ea0: 192.168.136.188 - - [18/Oct/2018:05:37:48 +0000] "GET /swift/v1/eisoo HTTP/1.1" 1 0 - python-requests/2.6.0 CPython/2.7.5 Linux/3.10.0-693.el7.x86_64
+2018-10-18 05:37:48.680739 7f3dc9ff3700  1 ====== starting new request req=0x7f3dc9fed5b0 =====
+2018-10-18 05:37:48.687091 7f3dc9ff3700  1 ====== req done req=0x7f3dc9fed5b0 op status=0 http_status=200 ======
+2018-10-18 05:37:48.687239 7f3dc9ff3700  1 civetweb: 0x7f3de8000bd0: 192.168.136.188 - - [18/Oct/2018:05:37:48 +0000] "GET /swift/v1/eisoo/badde6e3-5a6f-473c-b0d2-c1b1f6e31810/connection-test/object HTTP/1.1" 1 0 - python-requests/2.6.0 CPython/2.7.5 Linux/3.10.0-693.el7.x86_64
+2018-10-18 05:37:48.690376 7f3dc8ff1700  1 ====== starting new request req=0x7f3dc8feb5b0 =====
+2018-10-18 05:37:48.751418 7f3dc8ff1700  1 ====== req done req=0x7f3dc8feb5b0 op status=1901 http_status=202 ======
+2018-10-18 05:37:48.751547 7f3dc8ff1700  1 civetweb: 0x7f3df8000ea0: 192.168.136.188 - - [18/Oct/2018:05:37:48 +0000] "PUT /swift/v1/abc HTTP/1.1" 1 0 - python-requests/2.6.0 CPython/2.7.5 Linux/3.10.0-693.el7.x86_64
+2018-10-18 05:37:48.755431 7f3dc87f0700  1 ====== starting new request req=0x7f3dc87ea5b0 =====
+2018-10-18 05:37:48.771781 7f3dc87f0700  1 ====== req done req=0x7f3dc87ea5b0 op status=1900 http_status=201 ======
+2018-10-18 05:37:48.772069 7f3dc87f0700  1 civetweb: 0x7f3e00000ea0: 192.168.136.188 - - [18/Oct/2018:05:37:48 +0000] "PUT /swift/v1/abc/def HTTP/1.1" 1 0 - python-requests/2.6.0 CPython/2.7.5 Linux/3.10.0-693.el7.x86_64
+2018-10-18 05:37:48.776776 7f3dc7fef700  1 ====== starting new request req=0x7f3dc7fe95b0 =====
+2018-10-18 05:37:48.790752 7f3dc7fef700  1 ====== req done req=0x7f3dc7fe95b0 op status=1900 http_status=201 ======
+2018-10-18 05:37:48.790871 7f3dc7fef700  1 civetweb: 0x7f3e04000bd0: 192.168.136.188 - - [18/Oct/2018:05:37:48 +0000] "PUT /swift/v1/abc/def/a HTTP/1.1" 1 0 - python-requests/2.6.0 CPython/2.7.5 Linux/3.10.0-693.el7.x86_64
+2018-10-18 05:37:48.796851 7f3dc77ee700  1 ====== starting new request req=0x7f3dc77e85b0 =====
+2018-10-18 05:37:48.797348 7f3dc77ee700  0 NOTICE: request time skew too big now=2018-10-18 05:37:48.000000 req_time=2018-10-18 05:57:09.000000
+2018-10-18 05:37:48.797544 7f3dc77ee700  1 ====== req done req=0x7f3dc77e85b0 op status=0 http_status=403 ======
+2018-10-18 05:37:48.797628 7f3dc77ee700  1 civetweb: 0x7f3e0c000ea0: 192.168.136.188 - - [18/Oct/2018:05:37:48 +0000] "PUT /eisoo/ HTTP/1.1" 1 0 - Boto/2.49.0 Python/2.7.5 Linux/3.10.0-693.el7.x86_64
+2018-10-18 05:38:36.350951 7f3dc07e0700  1 ====== starting new request req=0x7f3dc07da5b0 =====
+2018-10-18 05:38:36.351482 7f3dc07e0700  1 ====== req done req=0x7f3dc07da5b0 op status=0 http_status=204 ======
+2018-10-18 05:38:36.351571 7f3dc07e0700  1 civetweb: 0x7f3e30008640: 192.168.136.188 - - [18/Oct/2018:05:38:36 +0000] "GET /auth HTTP/1.1" 1 0 - python-requests/2.6.0 CPython/2.7.5 Linux/3.10.0-693.el7.x86_64
+2018-10-18 05:38:36.360212 7f3dbffdf700  1 ====== starting new request req=0x7f3dbffd95b0 =====
+2018-10-18 05:38:36.360517 7f3dbffdf700  0 NOTICE: request time skew too big now=2018-10-18 05:38:36.000000 req_time=2018-10-18 05:57:57.000000
+2018-10-18 05:38:36.360702 7f3dbffdf700  1 ====== req done req=0x7f3dbffd95b0 op status=0 http_status=403 ======
+2018-10-18 05:38:36.360789 7f3dbffdf700  1 civetweb: 0x7f3e3c004800: 192.168.136.188 - - [18/Oct/2018:05:38:36 +0000] "PUT /eisoo/ HTTP/1.1" 1 0 - Boto/2.49.0 Python/2.7.5 Linux/3.10.0-693.el7.x86_64
+2018-10-18 05:39:04.416299 7f3dc5feb700  1 ====== starting new request req=0x7f3dc5fe55b0 =====
+2018-10-18 05:39:04.416826 7f3dc5feb700  1 ====== req done req=0x7f3dc5fe55b0 op status=0 http_status=204 ======
+2018-10-18 05:39:04.416942 7f3dc5feb700  1 civetweb: 0x7f3e34004400: 192.168.136.188 - - [18/Oct/2018:05:39:04 +0000] "GET /auth HTTP/1.1" 1 0 - python-requests/2.6.0 CPython/2.7.5 Linux/3.10.0-693.el7.x86_64
+2018-10-18 05:39:04.484172 7f3dbefdd700  1 ====== starting new request req=0x7f3dbefd75b0 =====
+2018-10-18 05:39:04.492859 7f3dbefdd700  1 ====== req done req=0x7f3dbefd75b0 op status=0 http_status=200 ======
+2018-10-18 05:39:04.492989 7f3dbefdd700  1 civetweb: 0x7f3e40003150: 192.168.136.188 - - [18/Oct/2018:05:39:04 +0000] "GET /swift/v1 HTTP/1.1" 1 0 - python-requests/2.6.0 CPython/2.7.5 Linux/3.10.0-693.el7.x86_64
+2018-10-18 05:39:04.497125 7f3dc1fe3700  1 ====== starting new request req=0x7f3dc1fdd5b0 =====
+2018-10-18 05:39:04.501171 7f3dc1fe3700  1 ====== req done req=0x7f3dc1fdd5b0 op status=0 http_status=200 ======
+2018-10-18 05:39:04.501359 7f3dc1fe3700  1 civetweb: 0x7f3e18000ea0: 192.168.136.188 - - [18/Oct/2018:05:39:04 +0000] "GET /swift/v1/abc HTTP/1.1" 1 0 - python-requests/2.6.0 CPython/2.7.5 Linux/3.10.0-693.el7.x86_64
+2018-10-18 05:39:04.505226 7f3dc0fe1700  1 ====== starting new request req=0x7f3dc0fdb5b0 =====
+2018-10-18 05:39:04.507612 7f3dc0fe1700  1 ====== req done req=0x7f3dc0fdb5b0 op status=0 http_status=200 ======
+2018-10-18 05:39:04.507707 7f3dc0fe1700  1 civetweb: 0x7f3e1c000ea0: 192.168.136.188 - - [18/Oct/2018:05:39:04 +0000] "GET /swift/v1/abc/def HTTP/1.1" 1 0 - python-requests/2.6.0 CPython/2.7.5 Linux/3.10.0-693.el7.x86_64
+2018-10-18 05:39:04.511249 7f3dc17e2700  1 ====== starting new request req=0x7f3dc17dc5b0 =====
+2018-10-18 05:39:04.513335 7f3dc17e2700  1 ====== req done req=0x7f3dc17dc5b0 op status=0 http_status=200 ======
+2018-10-18 05:39:04.513439 7f3dc17e2700  1 civetweb: 0x7f3e14000ea0: 192.168.136.188 - - [18/Oct/2018:05:39:04 +0000] "GET /swift/v1/abc/def/a HTTP/1.1" 1 0 - python-requests/2.6.0 CPython/2.7.5 Linux/3.10.0-693.el7.x86_64
+2018-10-18 05:39:04.532708 7f3dbf7de700  1 ====== starting new request req=0x7f3dbf7d85b0 =====
+2018-10-18 05:39:04.544733 7f3dbf7de700  1 ====== req done req=0x7f3dbf7d85b0 op status=0 http_status=200 ======
+2018-10-18 05:39:04.544876 7f3dbf7de700  1 civetweb: 0x7f3e3800c980: 192.168.136.188 - - [18/Oct/2018:05:39:04 +0000] "GET /swift/v1/eisoo HTTP/1.1" 1 0 - python-requests/2.6.0 CPython/2.7.5 Linux/3.10.0-693.el7.x86_64
+2018-10-18 05:39:04.551739 7f3dbe7dc700  1 ====== starting new request req=0x7f3dbe7d65b0 =====
+2018-10-18 05:39:04.561958 7f3dbe7dc700  1 ====== req done req=0x7f3dbe7d65b0 op status=0 http_status=200 ======
+2018-10-18 05:39:04.562122 7f3dbe7dc700  1 civetweb: 0x7f3e4c00a830: 192.168.136.188 - - [18/Oct/2018:05:39:04 +0000] "GET /swift/v1/eisoo/badde6e3-5a6f-473c-b0d2-c1b1f6e31810/connection-test/object HTTP/1.1" 1 0 - python-requests/2.6.0 CPython/2.7.5 Linux/3.10.0-693.el7.x86_64
+2018-10-18 05:39:06.413505 7f3dc4fe9700  1 ====== starting new request req=0x7f3dc4fe35b0 =====
+2018-10-18 05:39:06.414166 7f3dc4fe9700  1 ====== req done req=0x7f3dc4fe35b0 op status=0 http_status=204 ======
+2018-10-18 05:39:06.414246 7f3dc4fe9700  1 civetweb: 0x7f3e4400cc40: 192.168.136.188 - - [18/Oct/2018:05:39:06 +0000] "GET /auth HTTP/1.1" 1 0 - python-requests/2.6.0 CPython/2.7.5 Linux/3.10.0-693.el7.x86_64
+2018-10-18 05:39:06.492168 7f3dc3fe7700  1 ====== starting new request req=0x7f3dc3fe15b0 =====
+2018-10-18 05:39:06.501830 7f3dc3fe7700  1 ====== req done req=0x7f3dc3fe15b0 op status=0 http_status=200 ======
+2018-10-18 05:39:06.501980 7f3dc3fe7700  1 civetweb: 0x7f3e48007400: 192.168.136.188 - - [18/Oct/2018:05:39:06 +0000] "GET /swift/v1 HTTP/1.1" 1 0 - python-requests/2.6.0 CPython/2.7.5 Linux/3.10.0-693.el7.x86_64
+2018-10-18 05:39:06.506962 7f3dc6fed700  1 ====== starting new request req=0x7f3dc6fe75b0 =====
+2018-10-18 05:39:06.511872 7f3dc6fed700  1 ====== req done req=0x7f3dc6fe75b0 op status=0 http_status=200 ======
+2018-10-18 05:39:06.511994 7f3dc6fed700  1 civetweb: 0x7f3e50004f30: 192.168.136.188 - - [18/Oct/2018:05:39:06 +0000] "GET /swift/v1/abc HTTP/1.1" 1 0 - python-requests/2.6.0 CPython/2.7.5 Linux/3.10.0-693.el7.x86_64
+2018-10-18 05:39:06.516155 7f3dbcfd9700  1 ====== starting new request req=0x7f3dbcfd35b0 =====
+2018-10-18 05:39:06.519375 7f3dbcfd9700  1 ====== req done req=0x7f3dbcfd35b0 op status=0 http_status=200 ======
+2018-10-18 05:39:06.519469 7f3dbcfd9700  1 civetweb: 0x7f3e5c020420: 192.168.136.188 - - [18/Oct/2018:05:39:06 +0000] "GET /swift/v1/abc/def HTTP/1.1" 1 0 - python-requests/2.6.0 CPython/2.7.5 Linux/3.10.0-693.el7.x86_64
+2018-10-18 05:39:06.536764 7f3dbdfdb700  1 ====== starting new request req=0x7f3dbdfd55b0 =====
+2018-10-18 05:39:06.541122 7f3dbdfdb700  1 ====== req done req=0x7f3dbdfd55b0 op status=0 http_status=200 ======
+2018-10-18 05:39:06.541229 7f3dbdfdb700  1 civetweb: 0x7f3e58005c10: 192.168.136.188 - - [18/Oct/2018:05:39:06 +0000] "GET /swift/v1/abc/def/a HTTP/1.1" 1 0 - python-requests/2.6.0 CPython/2.7.5 Linux/3.10.0-693.el7.x86_64
+2018-10-18 05:39:06.556535 7f3dbd7da700  1 ====== starting new request req=0x7f3dbd7d45b0 =====
+2018-10-18 05:39:06.561307 7f3dbd7da700  1 ====== req done req=0x7f3dbd7d45b0 op status=0 http_status=200 ======
+2018-10-18 05:39:06.561414 7f3dbd7da700  1 civetweb: 0x7f3e600064d0: 192.168.136.188 - - [18/Oct/2018:05:39:06 +0000] "GET /swift/v1/eisoo HTTP/1.1" 1 0 - python-requests/2.6.0 CPython/2.7.5 Linux/3.10.0-693.el7.x86_64
+2018-10-18 05:39:06.566027 7f3dc37e6700  1 ====== starting new request req=0x7f3dc37e05b0 =====
+2018-10-18 05:39:06.569384 7f3dc37e6700  1 ====== req done req=0x7f3dc37e05b0 op status=0 http_status=200 ======
+2018-10-18 05:39:06.569494 7f3dc37e6700  1 civetweb: 0x7f3e64004f30: 192.168.136.188 - - [18/Oct/2018:05:39:06 +0000] "GET /swift/v1/eisoo/badde6e3-5a6f-473c-b0d2-c1b1f6e31810/connection-test/object HTTP/1.1" 1 0 - python-requests/2.6.0 CPython/2.7.5 Linux/3.10.0-693.el7.x86_64
+2018-10-18 05:39:23.775957 7f3dc27e4700  1 ====== starting new request req=0x7f3dc27de5b0 =====
+2018-10-18 05:39:23.776533 7f3dc27e4700  1 ====== req done req=0x7f3dc27de5b0 op status=0 http_status=204 ======
+2018-10-18 05:39:23.776614 7f3dc27e4700  1 civetweb: 0x7f3ddc008df0: 192.168.136.188 - - [18/Oct/2018:05:39:23 +0000] "GET /auth HTTP/1.1" 1 0 - python-requests/2.6.0 CPython/2.7.5 Linux/3.10.0-693.el7.x86_64
+2018-10-18 05:39:23.781563 7f3dbafd5700  1 ====== starting new request req=0x7f3dbafcf5b0 =====
+2018-10-18 05:39:23.782005 7f3dbafd5700  0 NOTICE: request time skew too big now=2018-10-18 05:39:23.000000 req_time=2018-10-18 05:58:44.000000
+2018-10-18 05:39:23.782194 7f3dbafd5700  1 ====== req done req=0x7f3dbafcf5b0 op status=0 http_status=403 ======
+2018-10-18 05:39:23.782269 7f3dbafd5700  1 civetweb: 0x7f3e6c0050d0: 192.168.136.188 - - [18/Oct/2018:05:39:23 +0000] "PUT /eisoo/ HTTP/1.1" 1 0 - Boto/2.49.0 Python/2.7.5 Linux/3.10.0-693.el7.x86_64
+teardown: managing teardown after SIGTERM
+teardown: Sending SIGTERM to PID 168
+teardown: Waiting PID 168 to terminate .2018-10-18 05:40:31.998394 7f3e097fa700  1 handle_sigterm
+2018-10-18 05:40:31.998448 7f3e097fa700  1 handle_sigterm set alarm for 120
+2018-10-18 05:40:31.998482 7f3e8cb58a00 -1 shutting down
+2018-10-18 05:40:32.036412 7f3e11ffb700  0 ERROR: failed to clone shard, completion_mgr.get_next() returned ret=-125
+.2018-10-18 05:40:32.129948 7f3e8cb58a00  1 final shutdown
+
+teardown: Process 168 is terminated
+teardown: Bye Bye, container will die with return code 0

@@ -1,0 +1,5 @@
+2018/10/18-05:10:00.826496 7fc8078ba700 Delete type=3 #1
+2018/10/18-05:10:00.827971 7fc7e2ffd700 Level-0 table #5: started
+2018/10/18-05:10:00.828051 7fc7e2ffd700 Level-0 table #5: 0 bytes OK
+2018/10/18-05:10:00.840099 7fc7e2ffd700 Delete type=0 #3
+2018/10/18-05:10:00.841109 7fc7e2ffd700 Manual compaction at level-0 from (begin) .. (end); will stop at (end)

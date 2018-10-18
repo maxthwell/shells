@@ -1,0 +1,118 @@
+I1018 05:50:58.559458 25532 exec.cpp:162] Version: 1.7.0
+I1018 05:50:58.565181 25533 exec.cpp:236] Executor registered on agent cb40f348-94b8-4f7f-aec2-f1fd15e2ba87-S2
+I1018 05:50:58.626641 25534 executor.cpp:130] Registered docker executor on ceph-node1
+I1018 05:50:58.626848 25534 executor.cpp:186] Starting task osd-n1-sde.c90fb93b-d299-11e8-ab34-024220aa8e88
+command: Running command: /usr/bin/ceph-osd --cluster=ceph --show-config-value=fsid
+command: Running command: /usr/bin/ceph-osd --check-allows-journal -i 0 --cluster ceph
+command: Running command: /usr/bin/ceph-osd --check-wants-journal -i 0 --cluster ceph
+command: Running command: /usr/bin/ceph-osd --check-needs-journal -i 0 --cluster ceph
+get_dm_uuid: get_dm_uuid /dev/sde uuid path is /sys/dev/block/8:64/dm/uuid
+set_type: Will colocate journal with data on /dev/sde
+command: Running command: /usr/bin/ceph-osd --cluster=ceph --show-config-value=osd_journal_size
+get_dm_uuid: get_dm_uuid /dev/sde uuid path is /sys/dev/block/8:64/dm/uuid
+get_dm_uuid: get_dm_uuid /dev/sde uuid path is /sys/dev/block/8:64/dm/uuid
+get_dm_uuid: get_dm_uuid /dev/sde uuid path is /sys/dev/block/8:64/dm/uuid
+command: Running command: /usr/bin/ceph-conf --cluster=ceph --name=osd. --lookup osd_mkfs_type
+command: Running command: /usr/bin/ceph-conf --cluster=ceph --name=osd. --lookup osd_fs_type
+command: Running command: /usr/bin/ceph-conf --cluster=ceph --name=osd. --lookup osd_mkfs_options_xfs
+command: Running command: /usr/bin/ceph-conf --cluster=ceph --name=osd. --lookup osd_fs_mkfs_options_xfs
+command: Running command: /usr/bin/ceph-conf --cluster=ceph --name=osd. --lookup osd_mount_options_xfs
+command: Running command: /usr/bin/ceph-conf --cluster=ceph --name=osd. --lookup osd_fs_mount_options_xfs
+get_dm_uuid: get_dm_uuid /dev/sde uuid path is /sys/dev/block/8:64/dm/uuid
+get_dm_uuid: get_dm_uuid /dev/sde uuid path is /sys/dev/block/8:64/dm/uuid
+ptype_tobe_for_name: name = journal
+get_dm_uuid: get_dm_uuid /dev/sde uuid path is /sys/dev/block/8:64/dm/uuid
+create_partition: Creating journal partition num 2 size 100 on /dev/sde
+command_check_call: Running command: /usr/sbin/sgdisk --new=2:0:+100M --change-name=2:ceph journal --partition-guid=2:757c64e7-062e-43f2-a1e9-049fa3a83a29 --typecode=2:45b0969e-9b03-4f30-b4c6-b4b80ceff106 --mbrtogpt -- /dev/sde
+update_partition: Calling partprobe on created device /dev/sde
+command_check_call: Running command: /usr/bin/udevadm settle --timeout=600
+command: Running command: /usr/bin/flock -s /dev/sde /usr/sbin/partprobe /dev/sde
+command_check_call: Running command: /usr/bin/udevadm settle --timeout=600
+get_dm_uuid: get_dm_uuid /dev/sde uuid path is /sys/dev/block/8:64/dm/uuid
+get_dm_uuid: get_dm_uuid /dev/sde uuid path is /sys/dev/block/8:64/dm/uuid
+get_dm_uuid: get_dm_uuid /dev/sde2 uuid path is /sys/dev/block/8:66/dm/uuid
+prepare_device: Journal is GPT partition /dev/disk/by-partuuid/757c64e7-062e-43f2-a1e9-049fa3a83a29
+prepare_device: Journal is GPT partition /dev/disk/by-partuuid/757c64e7-062e-43f2-a1e9-049fa3a83a29
+get_dm_uuid: get_dm_uuid /dev/sde uuid path is /sys/dev/block/8:64/dm/uuid
+set_data_partition: Creating osd partition on /dev/sde
+get_dm_uuid: get_dm_uuid /dev/sde uuid path is /sys/dev/block/8:64/dm/uuid
+ptype_tobe_for_name: name = data
+get_dm_uuid: get_dm_uuid /dev/sde uuid path is /sys/dev/block/8:64/dm/uuid
+create_partition: Creating data partition num 1 size 0 on /dev/sde
+command_check_call: Running command: /usr/sbin/sgdisk --largest-new=1 --change-name=1:ceph data --partition-guid=1:1c050b4a-cea9-462f-b9ae-1570b46e6cde --typecode=1:89c57f98-2fe5-4dc0-89c1-f3ad0ceff2be --mbrtogpt -- /dev/sde
+update_partition: Calling partprobe on created device /dev/sde
+command_check_call: Running command: /usr/bin/udevadm settle --timeout=600
+command: Running command: /usr/bin/flock -s /dev/sde /usr/sbin/partprobe /dev/sde
+command_check_call: Running command: /usr/bin/udevadm settle --timeout=600
+get_dm_uuid: get_dm_uuid /dev/sde uuid path is /sys/dev/block/8:64/dm/uuid
+get_dm_uuid: get_dm_uuid /dev/sde uuid path is /sys/dev/block/8:64/dm/uuid
+get_dm_uuid: get_dm_uuid /dev/sde1 uuid path is /sys/dev/block/8:65/dm/uuid
+populate_data_path_device: Creating xfs fs on /dev/sde1
+command_check_call: Running command: /usr/sbin/mkfs -t xfs -f -i size=2048 -- /dev/sde1
+mount: Mounting /dev/sde1 on /var/lib/ceph/tmp/mnt.x2Z5h2 with options noatime,inode64
+command_check_call: Running command: /usr/bin/mount -t xfs -o noatime,inode64 -- /dev/sde1 /var/lib/ceph/tmp/mnt.x2Z5h2
+populate_data_path: Preparing osd data dir /var/lib/ceph/tmp/mnt.x2Z5h2
+command: Running command: /usr/bin/chown -R ceph:ceph /var/lib/ceph/tmp/mnt.x2Z5h2/ceph_fsid.25834.tmp
+command: Running command: /usr/bin/chown -R ceph:ceph /var/lib/ceph/tmp/mnt.x2Z5h2/fsid.25834.tmp
+command: Running command: /usr/bin/chown -R ceph:ceph /var/lib/ceph/tmp/mnt.x2Z5h2/magic.25834.tmp
+command: Running command: /usr/bin/chown -R ceph:ceph /var/lib/ceph/tmp/mnt.x2Z5h2/journal_uuid.25834.tmp
+adjust_symlink: Creating symlink /var/lib/ceph/tmp/mnt.x2Z5h2/journal -> /dev/disk/by-partuuid/757c64e7-062e-43f2-a1e9-049fa3a83a29
+command: Running command: /usr/bin/chown -R ceph:ceph /var/lib/ceph/tmp/mnt.x2Z5h2
+unmount: Unmounting /var/lib/ceph/tmp/mnt.x2Z5h2
+command_check_call: Running command: /bin/umount -- /var/lib/ceph/tmp/mnt.x2Z5h2
+get_dm_uuid: get_dm_uuid /dev/sde uuid path is /sys/dev/block/8:64/dm/uuid
+command_check_call: Running command: /usr/sbin/sgdisk --typecode=1:4fbd7e29-9d25-41b8-afd0-062c0ceff05d -- /dev/sde
+update_partition: Calling partprobe on prepared device /dev/sde
+command_check_call: Running command: /usr/bin/udevadm settle --timeout=600
+command: Running command: /usr/bin/flock -s /dev/sde /usr/sbin/partprobe /dev/sde
+command_check_call: Running command: /usr/bin/udevadm settle --timeout=600
+command_check_call: Running command: /usr/bin/udevadm trigger --action=add --sysname-match sde1
+main_activate: path = /dev/sde1
+get_dm_uuid: get_dm_uuid /dev/sde1 uuid path is /sys/dev/block/8:65/dm/uuid
+command: Running command: /usr/sbin/blkid -o udev -p /dev/sde1
+command: Running command: /sbin/blkid -p -s TYPE -o value -- /dev/sde1
+command: Running command: /usr/bin/ceph-conf --cluster=ceph --name=osd. --lookup osd_mount_options_xfs
+command: Running command: /usr/bin/ceph-conf --cluster=ceph --name=osd. --lookup osd_fs_mount_options_xfs
+mount: Mounting /dev/sde1 on /var/lib/ceph/tmp/mnt.YZSPp1 with options noatime,inode64
+command_check_call: Running command: /usr/bin/mount -t xfs -o noatime,inode64 -- /dev/sde1 /var/lib/ceph/tmp/mnt.YZSPp1
+activate: Cluster uuid is 0c845bdd-bbad-4a3e-95d0-fd414660b87c
+command: Running command: /usr/bin/ceph-osd --cluster=ceph --show-config-value=fsid
+activate: Cluster name is ceph
+activate: OSD uuid is 1c050b4a-cea9-462f-b9ae-1570b46e6cde
+allocate_osd_id: Allocating OSD id...
+command: Running command: /usr/bin/ceph --cluster ceph --name client.bootstrap-osd --keyring /var/lib/ceph/bootstrap-osd/ceph.keyring osd create --concise 1c050b4a-cea9-462f-b9ae-1570b46e6cde
+command: Running command: /usr/bin/chown -R ceph:ceph /var/lib/ceph/tmp/mnt.YZSPp1/whoami.25978.tmp
+activate: OSD id is 3
+activate: Initializing OSD...
+command_check_call: Running command: /usr/bin/ceph --cluster ceph --name client.bootstrap-osd --keyring /var/lib/ceph/bootstrap-osd/ceph.keyring mon getmap -o /var/lib/ceph/tmp/mnt.YZSPp1/activate.monmap
+got monmap epoch 3
+command: Running command: /usr/bin/timeout 300 ceph-osd --cluster ceph --mkfs --mkkey -i 3 --monmap /var/lib/ceph/tmp/mnt.YZSPp1/activate.monmap --osd-data /var/lib/ceph/tmp/mnt.YZSPp1 --osd-journal /var/lib/ceph/tmp/mnt.YZSPp1/journal --osd-uuid 1c050b4a-cea9-462f-b9ae-1570b46e6cde --keyring /var/lib/ceph/tmp/mnt.YZSPp1/keyring --setuser ceph --setgroup disk
+command: Running command: /usr/bin/ceph-conf --cluster=ceph --name=osd. --lookup init
+command: Running command: /usr/bin/ceph-detect-init --default sysvinit
+activate: Marking with init system systemd
+activate: Authorizing OSD key...
+command_check_call: Running command: /usr/bin/ceph --cluster ceph --name client.bootstrap-osd --keyring /var/lib/ceph/bootstrap-osd/ceph.keyring auth add osd.3 -i /var/lib/ceph/tmp/mnt.YZSPp1/keyring osd allow * mon allow profile osd
+added key for osd.3
+command: Running command: /usr/bin/chown -R ceph:ceph /var/lib/ceph/tmp/mnt.YZSPp1/active.25978.tmp
+activate: ceph osd.3 data dir is ready at /var/lib/ceph/tmp/mnt.YZSPp1
+move_mount: Moving mount to final location...
+command_check_call: Running command: /bin/mount -o noatime,inode64 -- /dev/sde1 /var/lib/ceph/osd/ceph-3
+command_check_call: Running command: /bin/umount -l -- /var/lib/ceph/tmp/mnt.YZSPp1
+create-or-move updating item name 'osd.3' weight 0.08 at location {host=ceph-node1,root=default} to crush map
+2018-10-18 05:51:11.275243 7fbdd8463880 -1 osd.3 0 log_to_monitors {default=true}
+2018-10-18 06:22:34.002933 7fbdb50ed700 -1 osd.3 163 heartbeat_check: no reply from osd.0 since back 2018-10-18 06:01:11.021475 front 2018-10-18 06:01:11.021475 (cutoff 2018-10-18 06:22:14.002931)
+2018-10-18 06:22:34.002940 7fbdb50ed700 -1 osd.3 163 heartbeat_check: no reply from osd.1 since back 2018-10-18 06:01:11.021475 front 2018-10-18 06:01:11.021475 (cutoff 2018-10-18 06:22:14.002931)
+2018-10-18 06:22:34.002947 7fbdb50ed700 -1 osd.3 163 heartbeat_check: no reply from osd.2 since back 2018-10-18 06:01:11.021475 front 2018-10-18 06:01:11.021475 (cutoff 2018-10-18 06:22:14.002931)
+2018-10-18 06:22:34.002952 7fbdb50ed700 -1 osd.3 163 heartbeat_check: no reply from osd.4 since back 2018-10-18 06:01:11.021475 front 2018-10-18 06:01:11.021475 (cutoff 2018-10-18 06:22:14.002931)
+2018-10-18 06:22:34.002957 7fbdb50ed700 -1 osd.3 163 heartbeat_check: no reply from osd.5 since back 2018-10-18 06:01:11.021475 front 2018-10-18 06:01:11.021475 (cutoff 2018-10-18 06:22:14.002931)
+2018-10-18 06:22:34.003840 7fbdce27f700 -1 osd.3 163 heartbeat_check: no reply from osd.0 since back 2018-10-18 06:01:11.021475 front 2018-10-18 06:01:11.021475 (cutoff 2018-10-18 06:22:14.003838)
+2018-10-18 06:22:34.003847 7fbdce27f700 -1 osd.3 163 heartbeat_check: no reply from osd.1 since back 2018-10-18 06:01:11.021475 front 2018-10-18 06:01:11.021475 (cutoff 2018-10-18 06:22:14.003838)
+2018-10-18 06:22:34.003852 7fbdce27f700 -1 osd.3 163 heartbeat_check: no reply from osd.2 since back 2018-10-18 06:01:11.021475 front 2018-10-18 06:01:11.021475 (cutoff 2018-10-18 06:22:14.003838)
+2018-10-18 06:22:34.003857 7fbdce27f700 -1 osd.3 163 heartbeat_check: no reply from osd.4 since back 2018-10-18 06:01:11.021475 front 2018-10-18 06:01:11.021475 (cutoff 2018-10-18 06:22:14.003838)
+2018-10-18 06:22:34.003876 7fbdce27f700 -1 osd.3 163 heartbeat_check: no reply from osd.5 since back 2018-10-18 06:22:34.002750 front 2018-10-18 06:01:11.021475 (cutoff 2018-10-18 06:22:14.003838)
+2018-10-18 06:22:35.004246 7fbdce27f700 -1 osd.3 164 heartbeat_check: no reply from osd.0 since back 2018-10-18 06:22:34.002750 front 2018-10-18 06:01:11.021475 (cutoff 2018-10-18 06:22:15.004243)
+2018-10-18 06:22:36.004649 7fbdce27f700 -1 osd.3 165 heartbeat_check: no reply from osd.0 since back 2018-10-18 06:22:34.002750 front 2018-10-18 06:01:11.021475 (cutoff 2018-10-18 06:22:16.004647)
+2018-10-18 06:22:37.005122 7fbdce27f700 -1 osd.3 166 heartbeat_check: no reply from osd.0 since back 2018-10-18 06:22:34.002750 front 2018-10-18 06:01:11.021475 (cutoff 2018-10-18 06:22:17.005103)
+2018-10-18 06:22:38.009833 7fbdce27f700 -1 osd.3 167 heartbeat_check: no reply from osd.0 since back 2018-10-18 06:22:34.002750 front 2018-10-18 06:01:11.021475 (cutoff 2018-10-18 06:22:18.009829)
+2018-10-18 06:22:39.011373 7fbdce27f700 -1 osd.3 168 heartbeat_check: no reply from osd.0 since back 2018-10-18 06:22:34.002750 front 2018-10-18 06:01:11.021475 (cutoff 2018-10-18 06:22:19.011370)
+2018-10-18 06:22:39.303522 7fbdb50ed700 -1 osd.3 168 heartbeat_check: no reply from osd.0 since back 2018-10-18 06:22:34.002750 front 2018-10-18 06:01:11.021475 (cutoff 2018-10-18 06:22:19.303519)

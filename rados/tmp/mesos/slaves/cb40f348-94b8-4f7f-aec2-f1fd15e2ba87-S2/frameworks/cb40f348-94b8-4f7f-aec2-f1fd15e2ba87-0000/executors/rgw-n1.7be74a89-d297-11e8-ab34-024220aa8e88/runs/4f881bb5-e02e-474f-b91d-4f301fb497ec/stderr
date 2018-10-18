@@ -1,0 +1,7 @@
+I1018 05:34:29.945281 23759 exec.cpp:162] Version: 1.7.0
+I1018 05:34:29.955411 23761 exec.cpp:236] Executor registered on agent cb40f348-94b8-4f7f-aec2-f1fd15e2ba87-S2
+I1018 05:34:29.957069 23766 executor.cpp:130] Registered docker executor on ceph-node1
+I1018 05:34:29.957322 23761 executor.cpp:186] Starting task rgw-n1.7be74a89-d297-11e8-ab34-024220aa8e88
+I1018 05:40:31.431772 23764 executor.cpp:401] Received killTask for task rgw-n1.7be74a89-d297-11e8-ab34-024220aa8e88
+I1018 05:40:32.567939 23760 executor.cpp:736] Container exited with status 0
+I1018 05:40:33.569491 23768 process.cpp:926] Stopped the socket accept loop

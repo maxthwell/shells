@@ -1,0 +1,20 @@
+2018-10-18 05:51:00  /entrypoint.sh: static: does not generate config
+HEALTH_WARN clock skew detected on mon.ceph-node2, mon.ceph-node3; Monitor clock skew detected 
+Creating new GPT entries.
+The operation has completed successfully.
+The operation has completed successfully.
+meta-data=/dev/sde1              isize=2048   agcount=4, agsize=5236415 blks
+         =                       sectsz=512   attr=2, projid32bit=1
+         =                       crc=1        finobt=0, sparse=0
+data     =                       bsize=4096   blocks=20945659, imaxpct=25
+         =                       sunit=0      swidth=0 blks
+naming   =version 2              bsize=4096   ascii-ci=0 ftype=1
+log      =internal log           bsize=4096   blocks=10227, version=2
+         =                       sectsz=512   sunit=0 blks, lazy-count=1
+realtime =none                   extsz=4096   blocks=0, rtextents=0
+The operation has completed successfully.
+/dev/sde2
+2018-10-18 05:51:11  /entrypoint.sh: SUCCESS
+exec: PID 26198: spawning /usr/bin/ceph-osd --cluster ceph -f -i 3 --setuser ceph --setgroup disk
+exec: Waiting 26198 to quit
+starting osd.3 at :/0 osd_data /var/lib/ceph/osd/ceph-3 /var/lib/ceph/osd/ceph-3/journal

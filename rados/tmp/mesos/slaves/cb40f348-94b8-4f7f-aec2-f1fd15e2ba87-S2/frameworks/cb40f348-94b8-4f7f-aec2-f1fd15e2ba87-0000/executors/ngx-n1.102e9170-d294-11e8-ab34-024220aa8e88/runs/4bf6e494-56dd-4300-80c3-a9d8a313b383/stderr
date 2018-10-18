@@ -1,0 +1,4 @@
+I1018 05:10:06.044440 20550 exec.cpp:162] Version: 1.7.0
+I1018 05:10:06.337107 20569 exec.cpp:236] Executor registered on agent cb40f348-94b8-4f7f-aec2-f1fd15e2ba87-S2
+I1018 05:10:06.338408 20569 executor.cpp:130] Registered docker executor on ceph-node1
+I1018 05:10:06.338531 20569 executor.cpp:186] Starting task ngx-n1.102e9170-d294-11e8-ab34-024220aa8e88

@@ -1,0 +1,5 @@
+2018-10-18 05:10:10  /entrypoint.sh: Existing mon, trying to rejoin cluster...
+2018-10-18 05:10:17  /entrypoint.sh: SUCCESS
+exec: PID 184: spawning /usr/bin/ceph-mon --cluster ceph --setuser ceph --setgroup ceph -d -i ceph-node1 --mon-data /var/lib/ceph/mon/ceph-ceph-node1 --public-addr 192.168.136.187:6789
+exec: Waiting 184 to quit
+starting mon.ceph-node1 rank 0 at 192.168.136.187:6789/0 mon_data /var/lib/ceph/mon/ceph-ceph-node1 fsid 0c845bdd-bbad-4a3e-95d0-fd414660b87c

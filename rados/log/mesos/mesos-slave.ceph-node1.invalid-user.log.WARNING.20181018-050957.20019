@@ -1,0 +1,7 @@
+Log file created at: 2018/10/18 05:09:57
+Running on machine: ceph-node1
+Log line format: [IWEF]mmdd hh:mm:ss.uuuuuu threadid file:line] msg
+W1018 05:09:57.512598 20060 slave.cpp:5304] Ignoring status update TASK_FAILED (Status UUID: 9508715b-d9b1-44d0-a6b0-bb3385c12a53) for task osd-n1-sdd.632d21d9-d287-11e8-ab34-024220aa8e88 of framework cb40f348-94b8-4f7f-aec2-f1fd15e2ba87-0000 due to Slave ID mismatch; expected '', received '62704be4-92c5-4379-b62b-b37e5e8883f8-S3'
+W1018 05:09:57.633385 20063 slave.cpp:5304] Ignoring status update TASK_FAILED (Status UUID: 2fb1a962-1771-44ce-a0ad-50ce4e3f9d46) for task rgw-n1.632b9b36-d287-11e8-ab34-024220aa8e88 of framework cb40f348-94b8-4f7f-aec2-f1fd15e2ba87-0000 due to Slave ID mismatch; expected '', received '62704be4-92c5-4379-b62b-b37e5e8883f8-S3'
+W1018 05:09:57.633522 20063 slave.cpp:5304] Ignoring status update TASK_FAILED (Status UUID: 8eefea26-cffe-4d97-9cb8-e318df7e234e) for task mon-n1.632caca8-d287-11e8-ab34-024220aa8e88 of framework cb40f348-94b8-4f7f-aec2-f1fd15e2ba87-0000 due to Slave ID mismatch; expected '', received '62704be4-92c5-4379-b62b-b37e5e8883f8-S3'
+W1018 05:09:57.728950 20061 slave.cpp:5304] Ignoring status update TASK_FAILED (Status UUID: 6a320be8-3b68-4a5f-a0ca-01a79b284fbc) for task ngx-n1.632c3777-d287-11e8-ab34-024220aa8e88 of framework cb40f348-94b8-4f7f-aec2-f1fd15e2ba87-0000 due to Slave ID mismatch; expected '', received '62704be4-92c5-4379-b62b-b37e5e8883f8-S3'
